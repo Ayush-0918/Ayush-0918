@@ -161,16 +161,13 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 
 ---
 
-## 🏆 GitHub Achievements & Activity
-
-<p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=algolia&no-frame=true&column=6&margin-w=10" />
-</p>
+## 🏆 GitHub Activity
 
 <p align="center">
   <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayush-0918&theme=tokyo-night" />
 </p>
 ---
+
 ### 🌐 Professional & Social
 - 💼 **LinkedIn:** https://www.linkedin.com/in/ayush-pandey-8815142b1  
 - 📸 **Instagram:** https://www.instagram.com/_aayu._.18  
