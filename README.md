@@ -76,16 +76,15 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 ### 📘 Simplilearn
 - C Programming Basics  
 
-### 📊 LearnTube.ai / Great Learning
-- Data Analytics Fundamentals  
-
 ---
 
 ## 🏆 Hackathons & Achievements
 
 ### 🚀 DevCreate BuildFest 1.0  
 🏢 **Google Developer Groups (GDG) Jalandhar × CT Group of Institutions**
+🥈 **Second Hackathon Experience**
 
+- 👥 Team: **Plant Doctor's** 
 - 🏅 Top 16 among 150+ participating teams  
 - ⏱️ 30 hours of continuous innovation and problem-solving  
 - 🤝 Strong focus on teamwork, execution, and collaboration  
@@ -106,7 +105,7 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 
 ### 🌾 Byteverse 1.0 – CT Group of Institutions  
 🎯 **Theme:** Agriculture & Sustainability  
-🥈 **Second Hackathon Experience**
+🥈 **First Hackathon Experience**
 
 - 👥 Team: **GreenGuard AI**  
 - 🌱 Built a problem-driven solution for sustainable agriculture  
