@@ -172,4 +172,5 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 - 💼 **LinkedIn:** https://www.linkedin.com/in/ayush-pandey-8815142b1  
 - 📸 **Instagram:** https://www.instagram.com/_aayu._.18  
 - 📧 **Email:** ayushpandey10851@gmail.com
-                                          📬 *Open to internships, collaborations, and learning opportunities.*
+
+         📬 *Open to internships, collaborations, and learning opportunities.*
