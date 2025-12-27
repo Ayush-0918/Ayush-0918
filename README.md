@@ -1,40 +1,166 @@
-## Hi there 👋
-
-<!--
-**Ayush-0918/Ayush-0918** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-
-Here are some ideas to get you started:
-
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
-# 💫 About Me:
-		                •	👤 Name: Ayush Pandey<br>	•	🎓 Education: B.Tech in Computer Science Engineering<br>	•	🏫 Institution: CT Group of Institutions<br>	•	💻 Core Interests: Programming, problem-solving, and technology<br>	•	🧠 Skills Focus: Data Structures, Algorithms, and software development<br>	•	🚀 Career Goal: To secure a challenging internship and grow as a skilled software engineer<br>	•	⚡ Strengths: Quick learner, disciplined, and highly motivated<br>	•	📈 Mindset: Continuous learning and practical application of knowledge
-
-
-## 🌐 Socials:
-[![Instagram](https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white)](https://instagram.com/_aayu._.18) [![LinkedIn](https://img.shields.io/badge/LinkedIn-%230077B5.svg?logo=linkedin&logoColor=white)](https://linkedin.com/in/ayush-pandey-8815142b1) [![Pinterest](https://img.shields.io/badge/Pinterest-%23E60023.svg?logo=Pinterest&logoColor=white)](https://pinterest.com/aayu_12) [![YouTube](https://img.shields.io/badge/YouTube-%23FF0000.svg?logo=YouTube&logoColor=white)](https://youtube.com/@@COLLEGE_LIFE_0) [![email](https://img.shields.io/badge/Email-D14836?logo=gmail&logoColor=white)](mailto:ayushpandey10851@gmail.com) 
-
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Google Cloud](https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=for-the-badge&logo=google-cloud&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Pandas](https://img.shields.io/badge/pandas-%23150458.svg?style=for-the-badge&logo=pandas&logoColor=white) ![NumPy](https://img.shields.io/badge/numpy-%23013243.svg?style=for-the-badge&logo=numpy&logoColor=white) ![Matplotlib](https://img.shields.io/badge/Matplotlib-%23ffffff.svg?style=for-the-badge&logo=Matplotlib&logoColor=black) ![Keras](https://img.shields.io/badge/Keras-%23D00000.svg?style=for-the-badge&logo=Keras&logoColor=white) ![scikit-learn](https://img.shields.io/badge/scikit--learn-%23F7931E.svg?style=for-the-badge&logo=scikit-learn&logoColor=white) ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white) ![PyTorch](https://img.shields.io/badge/PyTorch-%23EE4C2C.svg?style=for-the-badge&logo=PyTorch&logoColor=white) ![GitHub](https://img.shields.io/badge/github-%23121011.svg?style=for-the-badge&logo=github&logoColor=white) ![Cisco](https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black)
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api?username=Ayush-0918&theme=dark&hide_border=false&include_all_commits=false&count_private=false)<br/>
-![](https://nirzak-streak-stats.vercel.app/?user=Ayush-0918&theme=dark&hide_border=false)<br/>
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush-0918&theme=dark&hide_border=false&include_all_commits=false&count_private=false&layout=compact)
-
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=radical&no-frame=false&no-bg=true&margin-w=4)
-
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Ayush-0918&limit=5&theme=dark&combine_all_yearly_contributions=true)
+<!-- ===================== Animated Typing Intro ===================== -->
+<p align="center">
+  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=3000&color=36BCF7&center=true&vCenter=true&width=800&lines=Hi+%F0%9F%91%8B+I'm+Ayush+Pandey;B.Tech+CSE+Student;Aspiring+Software+Engineer;AI+%26+ML+Enthusiast;Hackathon+Participant+%7C+Problem+Solver;Always+Learning+%26+Building" />
+</p>
 
 ---
-[![](https://visitcount.itsvg.in/api?id=Ayush-0918&icon=0&color=0)](https://visitcount.itsvg.in)
 
-<!-- Proudly created with GPRM ( https://gprm.itsvg.in ) -->
+## 👨‍💻 About Me
+
+🎓 **B.Tech Computer Science Engineering Student**  
+🏫 **CT Group of Institutions**  
+💡 **Aspiring Software Engineer | AI & ML Enthusiast**
+
+I am a passionate Computer Science student focused on building strong fundamentals in **Data Structures, Algorithms, Software Development, and Artificial Intelligence**.  
+I believe in **learning by doing**, participating in real-world problem solving through **hackathons, projects, and virtual industry experiences**.
+
+---
+
+## 🎯 Career Objective
+
+To secure a challenging **internship or entry-level role** where I can apply my technical skills, gain industry exposure, and continuously grow as a responsible and skilled software engineer.
+
+---
+
+## 🧠 Technical Skills
+
+### 💻 Programming Languages
+- C  
+- C++  
+- C#  
+- Python  
+
+### 🌐 Web Technologies
+- HTML  
+- CSS  
+
+### 🤖 AI, ML & Data
+- Artificial Intelligence (AI)  
+- Machine Learning  
+- Natural Language Processing (NLP)  
+- Computer Vision  
+- Pandas, NumPy, Matplotlib  
+- Scikit-learn, TensorFlow, Keras, PyTorch  
+
+### ☁️ Tools & Platforms
+- Git & GitHub  
+- Google Cloud (Vertex AI, Responsible AI)  
+- Cisco Networking Basics  
+- Adobe Photoshop  
+- Microsoft Office  
+
+---
+
+## 🎓 Certifications & Professional Learning
+
+### ☁️ Google Cloud Skills Boost
+- Introduction to Responsible AI  
+- Introduction to Generative AI  
+- Introduction to Large Language Models  
+- Prompt Design in Vertex AI  
+
+### 🏢 Forage Virtual Experience Programs
+- **Tata GenAI Powered Data Analytics Job Simulation**  
+  *(EDA, Predictive Modeling, AI Strategy, Ethical Reasoning)*  
+
+- **Deloitte Australia – Technology Job Simulation**  
+
+- **Citi – Technology Software Development Virtual Experience**  
+  *(Java, APIs, Backend Development, System Design, UML)*  
+
+### 🤖 IBM
+- Natural Language Processing & Computer Vision (MDL-214)
+
+### 🧑‍💼 Internshala
+- Student Partner (ISP) – Direct Entry  
+  *(Leadership, Communication, Team Management)*  
+
+### 🏫 Infosys Springboard
+- Effective Communication Skills (Verbal & Non-Verbal)
+
+### 📘 Simplilearn
+- C Programming Basics  
+
+### 📊 LearnTube.ai / Great Learning
+- Data Analytics Fundamentals  
+
+---
+
+## 🏆 Hackathons & Achievements
+
+### 🚀 DevCreate BuildFest 1.0 – GDG Jalandhar
+- Organized by **Google Developer Groups (GDG)** & **CT Group**
+- 🏅 **Top 16 out of 150+ teams**
+- ⏱️ 30 hours of continuous innovation
+- 📊 Scored **24/30**
+- Strengthened teamwork, pressure handling & execution skills
+
+---
+
+### 🌾 Byteverse 1.0 – CT Group of Institutions
+- 🥇 First Hackathon Experience  
+- 🧑‍🤝‍🧑 Team: **GreenGuard AI**
+- 🎯 Theme: **Agriculture & Sustainability**
+- 🛠️ Built an end-to-end solution using **Frontend + Backend + AI APIs**
+- Learned real hackathon workflow, pitching & collaboration
+
+---
+
+## 🚀 Featured Projects
+
+### 🌱 Plant Doctors (AI-Based Plant Health System)
+- AI system to detect plant diseases from leaf images  
+- Uses Machine Learning & Computer Vision concepts  
+- Provides disease identification & basic treatment suggestions  
+- Designed for farmers & sustainable agriculture  
+- Inspired by real hackathon problem statements  
+
+---
+
+### 📚 Smart Study Material Sharing Platform
+- Semester-wise academic resource management system  
+- Admin-only upload & student-only download access  
+- Google Drive integration  
+- Secure, scalable & college-level competitive project  
+
+---
+
+## 🧠 Coding Profiles
+
+- 💡 **LeetCode:** https://leetcode.com/ayushpandey1112  
+- 🧩 **HackerRank:** https://www.hackerrank.com/@ayushpandey10851  
+
+---
+
+## 📊 GitHub Analytics
+
+<p align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=Ayush-0918&show_icons=true&theme=tokyonight" />
+  <br/>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Ayush-0918&theme=tokyonight" />
+  <br/>
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush-0918&layout=compact&theme=tokyonight" />
+</p>
+
+---
+
+## 🏆 GitHub Achievements
+
+<p align="center">
+  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=radical&no-frame=true" />
+</p>
+
+---
+
+## 📄 Resume
+
+📌 **Download Resume:**  
+👉 *(Add Google Drive resume link here)*
+
+---
+
+⭐ **“Consistency, curiosity, and real-world learning define my journey in technology.”**
+
+<p align="center">
+  <img src="https://visitcount.itsvg.in/api?id=Ayush-0918&icon=0&color=6" />
+</p>
