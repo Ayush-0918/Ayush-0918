@@ -105,7 +105,7 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 
 ### 🌾 Byteverse 1.0 – CT Group of Institutions  
 🎯 **Theme:** Agriculture & Sustainability  
-🥈 **First Hackathon Experience**
+🥇 **First Hackathon Experience**
 
 - 👥 Team: **GreenGuard AI**  
 - 🌱 Built a problem-driven solution for sustainable agriculture  
