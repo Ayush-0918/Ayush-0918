@@ -156,29 +156,23 @@ To secure a **challenging internship or entry-level opportunity** where I can ap
 ## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ayush-0918&show_icons=true&theme=tokyonight" />
-  <br/>
   <img src="https://nirzak-streak-stats.vercel.app/?user=Ayush-0918&theme=tokyonight" />
   <br/>
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush-0918&layout=compact&theme=tokyonight" />
-</p>
 
 ---
 
-## 🏆 GitHub Achievements
+## 🏆 GitHub Achievements & Activity
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=algolia&no-frame=true&margin-w=10" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=algolia&no-frame=true&column=6&margin-w=10" />
 </p>
 
+<p align="center">
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayush-0918&theme=tokyo-night" />
+</p>
 ---
 ### 🌐 Professional & Social
 - 💼 **LinkedIn:** https://www.linkedin.com/in/ayush-pandey-8815142b1  
 - 📸 **Instagram:** https://www.instagram.com/_aayu._.18  
 - 📧 **Email:** ayushpandey10851@gmail.com
                                           📬 *Open to internships, collaborations, and learning opportunities.*
-⭐ **“Consistency, curiosity, and real-world learning define my journey in technology.”**
-
-<p align="center">
-  <img src="https://visitcount.itsvg.in/api?id=Ayush-0918&icon=0&color=6" />
-</p>
