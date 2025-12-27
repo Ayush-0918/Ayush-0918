@@ -1,6 +1,6 @@
 <!-- ===================== Animated Typing Intro ===================== -->
 <p align="center">
-  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=3000&color=36BCF7&center=true&vCenter=true&width=800&lines=Hi+%F0%9F%91%8B+I'm+Ayush+Pandey;B.Tech+CSE+Student;Aspiring+Software+Engineer;AI+%26+ML+Enthusiast;Hackathon+Participant+%7C+Problem+Solver;Always+Learning+%26+Building" />
+  <img src="https://readme-typing-svg.herokuapp.com?size=26&duration=3000&color=58A6FF&center=true&vCenter=true&width=900&lines=Hi+%F0%9F%91%8B+I'm+Ayush+Pandey;B.Tech+CSE+Student;Aspiring+Software+Engineer;AI+%26+ML+Enthusiast;Hackathon+Participant+%7C+Problem+Solver;Learning+by+Building+Every+Day" />
 </p>
 
 ---
@@ -11,14 +11,14 @@
 🏫 **CT Group of Institutions**  
 💡 **Aspiring Software Engineer | AI & ML Enthusiast**
 
-I am a passionate Computer Science student focused on building strong fundamentals in **Data Structures, Algorithms, Software Development, and Artificial Intelligence**.  
-I believe in **learning by doing**, participating in real-world problem solving through **hackathons, projects, and virtual industry experiences**.
+I am a motivated Computer Science student passionate about **software development, artificial intelligence, and real-world problem solving**.  
+I believe in **hands-on learning**, building projects, participating in hackathons, and continuously improving my technical and professional skills.
 
 ---
 
 ## 🎯 Career Objective
 
-To secure a challenging **internship or entry-level role** where I can apply my technical skills, gain industry exposure, and continuously grow as a responsible and skilled software engineer.
+To secure a **challenging internship or entry-level opportunity** where I can apply my skills, gain industry exposure, and grow into a responsible and skilled software engineer.
 
 ---
 
@@ -59,21 +59,16 @@ To secure a challenging **internship or entry-level role** where I can apply my 
 - Introduction to Large Language Models  
 - Prompt Design in Vertex AI  
 
-### 🏢 Forage Virtual Experience Programs
-- **Tata GenAI Powered Data Analytics Job Simulation**  
-  *(EDA, Predictive Modeling, AI Strategy, Ethical Reasoning)*  
-
-- **Deloitte Australia – Technology Job Simulation**  
-
-- **Citi – Technology Software Development Virtual Experience**  
-  *(Java, APIs, Backend Development, System Design, UML)*  
+### 🏢 Forage Virtual Experience
+- Tata GenAI Powered Data Analytics Job Simulation  
+- Deloitte Australia – Technology Job Simulation  
+- Citi – Technology Software Development Virtual Experience  
 
 ### 🤖 IBM
 - Natural Language Processing & Computer Vision (MDL-214)
 
 ### 🧑‍💼 Internshala
 - Student Partner (ISP) – Direct Entry  
-  *(Leadership, Communication, Team Management)*  
 
 ### 🏫 Infosys Springboard
 - Effective Communication Skills (Verbal & Non-Verbal)
@@ -88,40 +83,67 @@ To secure a challenging **internship or entry-level role** where I can apply my 
 
 ## 🏆 Hackathons & Achievements
 
-### 🚀 DevCreate BuildFest 1.0 – GDG Jalandhar
-- Organized by **Google Developer Groups (GDG)** & **CT Group**
-- 🏅 **Top 16 out of 150+ teams**
-- ⏱️ 30 hours of continuous innovation
-- 📊 Scored **24/30**
-- Strengthened teamwork, pressure handling & execution skills
+### 🚀 DevCreate BuildFest 1.0  
+🏢 **Google Developer Groups (GDG) Jalandhar × CT Group of Institutions**
+
+- 🏅 Top 16 among 150+ participating teams  
+- ⏱️ 30 hours of continuous innovation and problem-solving  
+- 🤝 Strong focus on teamwork, execution, and collaboration  
+
+**🛠️ Tools & Technologies Used**
+- Frontend Development  
+- Backend Integration  
+- AI APIs  
+- Rapid Prototyping  
+
+**✨ Key Learnings**
+- Real-world hackathon workflow  
+- Time management under pressure  
+- Turning ideas into working solutions  
+- Effective team communication  
 
 ---
 
-### 🌾 Byteverse 1.0 – CT Group of Institutions
-- 🥇 First Hackathon Experience  
-- 🧑‍🤝‍🧑 Team: **GreenGuard AI**
-- 🎯 Theme: **Agriculture & Sustainability**
-- 🛠️ Built an end-to-end solution using **Frontend + Backend + AI APIs**
-- Learned real hackathon workflow, pitching & collaboration
+### 🌾 Byteverse 1.0 – CT Group of Institutions  
+🎯 **Theme:** Agriculture & Sustainability  
+🥈 **Second Hackathon Experience**
+
+- 👥 Team: **GreenGuard AI**  
+- 🌱 Built a problem-driven solution for sustainable agriculture  
+- 🔧 Developed an end-to-end system using Frontend, Backend & AI APIs  
+
+**🧠 What I Learned**
+- Complete product thinking (idea → build → pitch)  
+- Collaboration under strict timelines  
+- Confidence in presenting technical ideas  
+- Exposure to real hackathon culture  
 
 ---
 
 ## 🚀 Featured Projects
 
-### 🌱 Plant Doctors (AI-Based Plant Health System)
-- AI system to detect plant diseases from leaf images  
-- Uses Machine Learning & Computer Vision concepts  
-- Provides disease identification & basic treatment suggestions  
-- Designed for farmers & sustainable agriculture  
-- Inspired by real hackathon problem statements  
+### 🌱 Plant Doctors  
+**AI-Based Plant Health & Disease Detection System**
+
+- 🤖 Detects plant diseases from leaf images  
+- 🧠 Uses Machine Learning & Computer Vision concepts  
+- 🌾 Designed for farmers & agricultural sustainability  
+- 💡 Provides disease identification with basic treatment suggestions  
+
+**Tech Stack:**  
+`Python` • `Machine Learning` • `Computer Vision` • `AI APIs`
 
 ---
 
 ### 📚 Smart Study Material Sharing Platform
-- Semester-wise academic resource management system  
-- Admin-only upload & student-only download access  
-- Google Drive integration  
-- Secure, scalable & college-level competitive project  
+
+- 🎓 Semester-wise academic resource management system  
+- 🔐 Admin-only upload & student-only download access  
+- ☁️ Google Drive integration  
+- ⚙️ Secure, scalable, and college-level competitive project  
+
+**Tech Stack:**  
+`HTML` • `CSS` • `Backend Logic` • `Cloud Storage`
 
 ---
 
@@ -147,18 +169,15 @@ To secure a challenging **internship or entry-level role** where I can apply my 
 ## 🏆 GitHub Achievements
 
 <p align="center">
-  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=radical&no-frame=true" />
+  <img src="https://github-profile-trophy.vercel.app/?username=Ayush-0918&theme=algolia&no-frame=true&margin-w=10" />
 </p>
 
 ---
-
-## 📄 Resume
-
-📌 **Download Resume:**  
-👉 *(Add Google Drive resume link here)*
-
----
-
+### 🌐 Professional & Social
+- 💼 **LinkedIn:** https://www.linkedin.com/in/ayush-pandey-8815142b1  
+- 📸 **Instagram:** https://www.instagram.com/_aayu._.18  
+- 📧 **Email:** ayushpandey10851@gmail.com
+                                          📬 *Open to internships, collaborations, and learning opportunities.*
 ⭐ **“Consistency, curiosity, and real-world learning define my journey in technology.”**
 
 <p align="center">
