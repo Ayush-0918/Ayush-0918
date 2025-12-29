@@ -5,11 +5,21 @@
 
 ---
 
-## 👨‍💻 About Me
+👨‍💻 About Me
 
-🎓 **B.Tech Computer Science Engineering Student**  
-🏫 **CT Group of Institutions**  
-💡 **Aspiring Software Engineer | AI & ML Enthusiast**
+🎓 B.Tech Computer Science Engineering Student
+🏫 CT Institute of Engineering, Management & Technology
+💡 Cloud & Data Engineer in Training | AWS • Python • SQL
+
+🔹 Interested in building scalable cloud architectures and data pipelines
+🔹 Focused on cloud computing, data engineering fundamentals, and system design
+🔹 Actively working on hands-on projects and industry-aligned simulations
+
+📌 Currently strengthening skills in AWS, Python, SQL, and data-driven systems
+🚀 Goal: Contribute to production-grade cloud & data platforms
+
+⸻
+
 
 I am a motivated Computer Science student passionate about **software development, artificial intelligence, and real-world problem solving**.  
 I believe in **hands-on learning**, building projects, participating in hackathons, and continuously improving my technical and professional skills.
