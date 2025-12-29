@@ -60,15 +60,29 @@
 ## 🚀 Featured Projects
 
 ### 🌱 Plant Doctors  
-AI-based plant health & disease detection system.  
-**Tech:** Python • Machine Learning • Computer Vision  
+**AI-Based Plant Health & Disease Detection System**
+
+- 🤖 Detects plant diseases from leaf images  
+- 🧠 Uses Machine Learning & Computer Vision concepts  
+- 🌾 Designed for farmers & agricultural sustainability  
+- 💡 Provides disease identification with basic treatment suggestions  
+
+**Tech Stack:**  
+Python • Machine Learning • Computer Vision • AI APIs
 
 ---
 
-### 📚 Smart Study Material Sharing Platform  
-Cloud-backed academic resource management system.  
-**Tech:** HTML • CSS • Backend Logic • Cloud Storage  
+### 📚 Smart Study Material Sharing Platform
 
+- 🎓 Semester-wise academic resource management system  
+- 🔐 Admin-only upload & student-only download access  
+- ☁️ Google Drive integration  
+- ⚙️ Secure, scalable, and college-level competitive project  
+
+**Tech Stack:**  
+HTML • CSS • Backend Logic • Cloud Storage
+
+---
 ---
 
 ## 🧩 Coding Profiles
@@ -78,15 +92,20 @@ Cloud-backed academic resource management system.
 
 ---
 
-## 📊 GitHub Stats
+## 📊 GitHub Analytics
 
 <p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=Ayush-0918&show_icons=true&theme=tokyonight&hide_border=true" />
-</p>
+  <img src="https://nirzak-streak-stats.vercel.app/?user=Ayush-0918&theme=tokyonight" />
+  <br/>
+
+---
+
+## 🏆 GitHub Activity
 
 <p align="center">
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=Ayush-0918&theme=tokyonight&hide_border=true" />
+  <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayush-0918&theme=tokyo-night" />
 </p>
+---
 
 ---
 
