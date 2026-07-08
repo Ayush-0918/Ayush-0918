@@ -146,15 +146,6 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 </table>
 </div>
 
-### 🧊 3D Contribution Space
-
-<div align="center">
-<img src="https://raw.githubusercontent.com/Ayush-0918/Ayush-0918/main/profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
-</div>
-
-<sub>💡 3D contribution matrix generated dynamically based on active commits to public and private production codebases.</sub>
-
-<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
 
 ## 🌐 Connect &amp; Collaborate
 
