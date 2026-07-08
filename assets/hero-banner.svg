@@ -154,20 +154,20 @@
   <!-- Left Content Column -->
   <g transform="translate(80, 0)">
     <!-- Tech chips header -->
-    <g transform="translate(0, 75)">
+    <g transform="translate(0, 65)">
       <rect x="0" y="0" width="135" height="24" rx="12" fill="#1e184a" stroke="#4a3e9c" stroke-width="1"/>
       <circle cx="12" cy="12" r="4" fill="#00cec9" />
       <text x="24" y="16" class="tech-badge">STUDENT AT IITR</text>
     </g>
     
     <!-- Main Name -->
-    <text x="0" y="150" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
+    <text x="0" y="155" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
     
     <!-- Subtitle -->
-    <text x="0" y="195" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
+    <text x="0" y="205" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
 
     <!-- Accent terminal prompt line -->
-    <g transform="translate(0, 235)" font-family="'Fira Code', monospace" font-size="14">
+    <g transform="translate(0, 245)" font-family="'Fira Code', monospace" font-size="14">
       <text fill="#57606f" x="0" y="0">❯</text>
       <text fill="#00cec9" x="18" y="0">npm</text>
       <text fill="#c8c6f0" x="52" y="0">run</text>
@@ -177,81 +177,85 @@
   </g>
 
   <!-- Right Content Column: Floating IDE Terminal -->
-  <g transform="translate(680, 50)" class="terminal-window">
-    <!-- Drop Shadow representation -->
-    <rect x="4" y="4" width="440" height="220" rx="12" fill="#02000a" opacity="0.6"/>
-    
-    <!-- Main Window -->
-    <rect width="440" height="220" rx="12" fill="#080614" stroke="url(#termBorder)" stroke-width="1.5" />
-    
-    <!-- Scanline effect layer inside terminal -->
-    <g opacity="0.08">
-      <line class="scanline-effect" x1="1.5" y1="0" x2="438.5" y2="0" stroke="#00cec9" stroke-width="3"/>
-    </g>
-
-    <!-- Terminal Header / Title Bar -->
-    <g transform="translate(0, 0)">
-      <!-- Window Controls -->
-      <circle cx="20" cy="18" r="6" fill="#ff7675"/>
-      <circle cx="40" cy="18" r="6" fill="#ffeaa7"/>
-      <circle cx="60" cy="18" r="6" fill="#55efc4"/>
+  <!-- Outer translation group preserves absolute positioning -->
+  <g transform="translate(680, 50)">
+    <!-- Inner group handles the CSS float animation without overriding coordinate translate -->
+    <g class="terminal-window">
+      <!-- Drop Shadow representation -->
+      <rect x="4" y="4" width="440" height="220" rx="12" fill="#02000a" opacity="0.6"/>
       
-      <!-- Tabs -->
-      <g transform="translate(100, 0)">
-        <!-- Active tab -->
-        <path d="M0,30 L10,8 L95,8 L105,30 Z" fill="#140f34" stroke="#4a3e9c" stroke-width="1" stroke-bottom="none"/>
-        <text x="52" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" text-anchor="middle">profile.py</text>
+      <!-- Main Window -->
+      <rect width="440" height="220" rx="12" fill="#080614" stroke="url(#termBorder)" stroke-width="1.5" />
+      
+      <!-- Scanline effect layer inside terminal -->
+      <g opacity="0.08">
+        <line class="scanline-effect" x1="1.5" y1="0" x2="438.5" y2="0" stroke="#00cec9" stroke-width="3"/>
+      </g>
+
+      <!-- Terminal Header / Title Bar -->
+      <g transform="translate(0, 0)">
+        <!-- Window Controls -->
+        <circle cx="20" cy="18" r="6" fill="#ff7675"/>
+        <circle cx="40" cy="18" r="6" fill="#ffeaa7"/>
+        <circle cx="60" cy="18" r="6" fill="#55efc4"/>
         
-        <!-- Inactive tab -->
-        <g transform="translate(108, 0)" opacity="0.5">
-          <text x="45" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#8a86c9" text-anchor="middle">stack.json</text>
+        <!-- Tabs -->
+        <g transform="translate(100, 0)">
+          <!-- Active tab -->
+          <path d="M0,30 L10,8 L95,8 L105,30 Z" fill="#140f34" stroke="#4a3e9c" stroke-width="1" stroke-bottom="none"/>
+          <text x="52" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" text-anchor="middle">profile.py</text>
+          
+          <!-- Inactive tab -->
+          <g transform="translate(108, 0)" opacity="0.5">
+            <text x="45" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#8a86c9" text-anchor="middle">stack.json</text>
+          </g>
         </g>
+        
+        <!-- Divider line -->
+        <line x1="0" y1="30" x2="440" y2="30" stroke="#241e54" stroke-width="1" />
       </g>
       
-      <!-- Divider line -->
-      <line x1="0" y1="30" x2="440" y2="30" stroke="#241e54" stroke-width="1" />
-    </g>
-    
-    <!-- Code / Text Area -->
-    <g transform="translate(25, 60)" class="term-text">
-      <!-- Line 1 -->
-      <text x="0" y="0">
-        <tspan class="term-cmd">class</tspan> <tspan fill="#ffeaa7">Developer</tspan>:
-      </text>
-      
-      <!-- Line 2 -->
-      <text x="20" y="22">
-        <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
-      </text>
-      
-      <!-- Line 3 -->
-      <text x="40" y="44">
-        self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
-      </text>
-      
-      <!-- Line 4 -->
-      <text x="40" y="66">
-        self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI Systems &amp; Data Science"</tspan>
-      </text>
-      
-      <!-- Line 5 -->
-      <text x="40" y="88">
-        self.<tspan fill="#81ecec">mission</tspan> = <tspan class="term-string">"Building code that survives scale"</tspan>
-      </text>
-      
-      <!-- Line 6 -->
-      <text x="20" y="118">
-        <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
-      </text>
-      
-      <!-- Line 7 -->
-      <text x="40" y="140">
-        <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always Learning &amp; Shipping 🚀"</tspan>
-      </text>
-      
-      <!-- Cursor on next line -->
-      <g transform="translate(20, 150)">
-        <rect class="cursor-blink" x="0" y="0" width="8" height="15" fill="#00cec9"/>
+      <!-- Code / Text Area -->
+      <g transform="translate(25, 60)" class="term-text">
+        <!-- Line 1 -->
+        <text x="0" y="0">
+          <tspan class="term-cmd">class</tspan> <tspan fill="#ffeaa7">Developer</tspan>:
+        </text>
+        
+        <!-- Line 2 -->
+        <text x="20" y="22">
+          <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
+        </text>
+        
+        <!-- Line 3 -->
+        <text x="40" y="44">
+          self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
+        </text>
+        
+        <!-- Line 4 -->
+        <text x="40" y="66">
+          self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI Systems &amp; Data Science"</tspan>
+        </text>
+        
+        <!-- Line 5 -->
+        <text x="40" y="88">
+          self.<tspan fill="#81ecec">mission</tspan> = <tspan class="term-string">"Building code that survives scale"</tspan>
+        </text>
+        
+        <!-- Line 6 -->
+        <text x="20" y="118">
+          <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
+        </text>
+        
+        <!-- Line 7 -->
+        <text x="40" y="140">
+          <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always Learning &amp; Shipping 🚀"</tspan>
+        </text>
+        
+        <!-- Cursor on next line -->
+        <g transform="translate(20, 150)">
+          <rect class="cursor-blink" x="0" y="0" width="8" height="15" fill="#00cec9"/>
+        </g>
       </g>
     </g>
   </g>
