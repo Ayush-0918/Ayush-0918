@@ -1,0 +1,288 @@
+<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="tbg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#02000a"/>
+      <stop offset="100%" stop-color="#0e0a2b"/>
+    </linearGradient>
+
+    <!-- Card Background Glow -->
+    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1b1440"/>
+      <stop offset="100%" stop-color="#0a0820"/>
+    </linearGradient>
+
+    <!-- Logo Gradients -->
+    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#387eb8"/>
+      <stop offset="100%" stop-color="#ffe052"/>
+    </linearGradient>
+
+    <linearGradient id="pytorchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ee4c2c"/>
+      <stop offset="100%" stop-color="#ff7675"/>
+    </linearGradient>
+
+    <linearGradient id="tfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff9f43"/>
+      <stop offset="100%" stop-color="#ee5253"/>
+    </linearGradient>
+
+    <linearGradient id="genAiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00cec9"/>
+      <stop offset="100%" stop-color="#a29bfe"/>
+    </linearGradient>
+
+    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#74b9ff"/>
+      <stop offset="100%" stop-color="#0984e3"/>
+    </linearGradient>
+
+    <!-- Grid pattern -->
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#241e54" stroke-width="0.8" opacity="0.3"/>
+    </pattern>
+
+    <filter id="cardNeon" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;family=Outfit:wght@500;700&amp;display=swap');
+      
+      .lbl { 
+        font-family: 'Outfit', -apple-system, sans-serif; 
+        font-size: 15px; 
+        font-weight: 700; 
+        fill: #ffffff; 
+      }
+      
+      .sub-lbl { 
+        font-family: 'Fira Code', monospace; 
+        font-size: 10px; 
+        fill: #a29bfe; 
+      }
+
+      .cat-title { 
+        font-family: 'Fira Code', monospace; 
+        font-size: 13px; 
+        font-weight: 700;
+        fill: #00cec9; 
+        letter-spacing: 2px;
+      }
+      
+      .cat-desc {
+        font-family: 'Outfit', -apple-system, sans-serif;
+        font-size: 12px;
+        fill: #8a86c9;
+      }
+
+      /* Float animations with different offsets */
+      @keyframes float1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
+      @keyframes float2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
+      @keyframes float3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
+      @keyframes float4 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
+
+      .f1 { animation: float1 4s infinite ease-in-out; }
+      .f2 { animation: float2 4.5s infinite ease-in-out 0.5s; }
+      .f3 { animation: float3 3.8s infinite ease-in-out 1s; }
+      .f4 { animation: float4 4.2s infinite ease-in-out 1.5s; }
+
+      .glow-item:hover {
+        stroke: #00cec9;
+        filter: url(#cardNeon);
+        transition: all 0.3s ease;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="300" fill="url(#tbg)"/>
+  <rect width="1200" height="300" fill="url(#grid)"/>
+
+  <!-- Left Column: AI & DATA SCIENCE -->
+  <g transform="translate(40, 20)">
+    <!-- Column Title -->
+    <text x="10" y="25" class="cat-title">❯ AI, DATA SCIENCE &amp; CORE MODELS</text>
+    <line x1="10" y1="35" x2="350" y2="35" stroke="#3e387c" stroke-width="1.5"/>
+
+    <!-- Row 1: Python, PyTorch, TensorFlow -->
+    <!-- Python -->
+    <g transform="translate(10, 55)" class="f1">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- Python Logo Path -->
+      <g transform="translate(16, 24)">
+        <path d="M16,2 C7.5,2 8,5.7 8,5.7 L8,9.3 L16,9.3 L16,10.5 L5.2,10.5 C5.2,10.5 2,10.1 2,18.5 C2,27 4.8,26.5 4.8,26.5 L7.7,26.5 L7.7,22.3 C7.7,17.2 11.9,13.2 17,13.2 L24.3,13.2 C24.3,13.2 27.8,13.2 27.8,5.2 C27.8,-2.8 16,2 16,2 Z" fill="#387eb8"/>
+        <path d="M16,30 C24.5,30 24,26.3 24,26.3 L24,22.7 L16,22.7 L16,21.5 L26.8,21.5 C26.8,21.5 30,21.9 30,13.5 C30,5 27.2,5.5 27.2,5.5 L24.3,5.5 L24.3,9.7 C24.3,14.8 20.1,18.8 15,18.8 L7.7,18.8 C7.7,18.8 4.2,18.8 4.2,26.8 C4.2,34.8 16,30 16,30 Z" fill="#ffe052"/>
+        <circle cx="12" cy="6" r="1.5" fill="#fff"/>
+        <circle cx="20" cy="26" r="1.5" fill="#fff"/>
+      </g>
+      <text x="64" y="40" class="lbl">Python</text>
+      <text x="64" y="56" class="sub-lbl">&lt;core_language&gt;</text>
+    </g>
+
+    <!-- PyTorch -->
+    <g transform="translate(195, 55)" class="f2">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- PyTorch Logo Path -->
+      <g transform="translate(16, 24)">
+        <path d="M16,2 L27.7,22.3 L16,27.7 L4.3,22.3 Z" fill="url(#pytorchGrad)"/>
+        <circle cx="16" cy="12" r="5" fill="#fff"/>
+      </g>
+      <text x="64" y="40" class="lbl">PyTorch</text>
+      <text x="64" y="56" class="sub-lbl">&lt;deep_learning&gt;</text>
+    </g>
+
+    <!-- TensorFlow -->
+    <g transform="translate(380, 55)" class="f3">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- TensorFlow Logo Path -->
+      <g transform="translate(16, 24)">
+        <polygon points="16,2 29,9.5 29,24.5 16,32 3,24.5 3,9.5" fill="none" stroke="url(#tfGrad)" stroke-width="2"/>
+        <polygon points="16,2 29,9.5 16,17 3,9.5" fill="url(#tfGrad)" opacity="0.75"/>
+        <polygon points="16,17 29,24.5 16,32 3,24.5" fill="url(#tfGrad)" opacity="0.4"/>
+        <line x1="16" y1="17" x2="16" y2="32" stroke="#fff" stroke-width="1.5"/>
+      </g>
+      <text x="64" y="40" class="lbl">TensorFlow</text>
+      <text x="64" y="56" class="sub-lbl">&lt;neural_nets&gt;</text>
+    </g>
+
+    <!-- Row 2: OpenCV, GenAI, NLP -->
+    <!-- OpenCV -->
+    <g transform="translate(10, 150)" class="f4">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- OpenCV Logo -->
+      <g transform="translate(18, 26)">
+        <circle cx="14" cy="9" r="7" fill="none" stroke="#e17055" stroke-width="3"/>
+        <circle cx="7" cy="21" r="7" fill="none" stroke="#00b894" stroke-width="3"/>
+        <circle cx="21" cy="21" r="7" fill="none" stroke="#0984e3" stroke-width="3"/>
+        <circle cx="14" cy="17" r="1.5" fill="#fff"/>
+      </g>
+      <text x="64" y="40" class="lbl">OpenCV</text>
+      <text x="64" y="56" class="sub-lbl">&lt;computer_vision&gt;</text>
+    </g>
+
+    <!-- GenAI -->
+    <g transform="translate(195, 150)" class="f3">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- GenAI custom glow spark -->
+      <g transform="translate(16, 24)">
+        <path d="M16,2 C16,12 20,16 30,16 C20,16 16,20 16,30 C16,20 12,16 2,16 C12,16 16,12 16,2 Z" fill="url(#genAiGrad)"/>
+        <circle cx="25" cy="8" r="2" fill="#fff"/>
+        <circle cx="7" cy="24" r="1" fill="#fff"/>
+      </g>
+      <text x="64" y="40" class="lbl">GenAI &amp; LLMs</text>
+      <text x="64" y="56" class="sub-lbl">&lt;prompt_n_agents&gt;</text>
+    </g>
+
+    <!-- NLP -->
+    <g transform="translate(380, 150)" class="f1">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- NLP Logo representation -->
+      <g transform="translate(16, 24)" fill="none" stroke="#00cec9" stroke-width="2" stroke-linecap="round">
+        <line x1="4" y1="16" x2="4" y2="16"/>
+        <line x1="8" y1="10" x2="8" y2="22"/>
+        <line x1="12" y1="6" x2="12" y2="26"/>
+        <line x1="16" y1="12" x2="16" y2="20"/>
+        <line x1="20" y1="4" x2="20" y2="28"/>
+        <line x1="24" y1="14" x2="24" y2="18"/>
+        <line x1="28" y1="8" x2="28" y2="24"/>
+      </g>
+      <text x="64" y="40" class="lbl">NLP &amp; Text</text>
+      <text x="64" y="56" class="sub-lbl">&lt;speech_n_seq&gt;</text>
+    </g>
+  </g>
+
+  <!-- Right Column: DE, INFRASTRUCTURE & MLOPS -->
+  <g transform="translate(600, 20)">
+    <!-- Column Title -->
+    <text x="10" y="25" class="cat-title">❯ CLOUD, MLOPS &amp; DEPLOYMENT</text>
+    <line x1="10" y1="35" x2="350" y2="35" stroke="#3e387c" stroke-width="1.5"/>
+
+    <!-- Row 1: AWS, GCP, SQL -->
+    <!-- AWS -->
+    <g transform="translate(10, 55)" class="f2">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- AWS Custom Logo -->
+      <g transform="translate(16, 28)">
+        <path d="M16,4 C8,4 2,10 2,16 C2,22 8,28 16,28" fill="none" stroke="#ff9f43" stroke-width="2.5"/>
+        <path d="M6,24 C12,28 20,28 26,24" fill="none" stroke="#ff9f43" stroke-width="2.5" stroke-linecap="round"/>
+        <polygon points="26,24 24,19 28,21" fill="#ff9f43"/>
+      </g>
+      <text x="64" y="40" class="lbl">AWS</text>
+      <text x="64" y="56" class="sub-lbl">&lt;solutions_arch&gt;</text>
+    </g>
+
+    <!-- GCP -->
+    <g transform="translate(195, 55)" class="f4">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- GCP logo representation -->
+      <g transform="translate(16, 24)">
+        <path d="M16,4 L28,11 L28,25 L16,32 L4,25 L4,11 Z" fill="none" stroke="url(#cloudGrad)" stroke-width="2"/>
+        <polygon points="16,4 28,11 16,18" fill="#ea4335" opacity="0.8"/>
+        <polygon points="28,11 28,25 16,18" fill="#4285f4" opacity="0.8"/>
+        <polygon points="28,25 16,32 16,18" fill="#34a853" opacity="0.8"/>
+        <polygon points="16,32 4,25 16,18" fill="#fbbd05" opacity="0.8"/>
+      </g>
+      <text x="64" y="40" class="lbl">Google Cloud</text>
+      <text x="64" y="56" class="sub-lbl">&lt;vertex_ai_ops&gt;</text>
+    </g>
+
+    <!-- SQL -->
+    <g transform="translate(380, 55)" class="f1">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- SQL Database cylinders -->
+      <g transform="translate(20, 24)" fill="none" stroke="#a29bfe" stroke-width="2">
+        <ellipse cx="12" cy="8" rx="10" ry="4" fill="#1b1440"/>
+        <path d="M2,8 L2,16 A10,4 0 0,0 22,16 L22,8" fill="#1b1440"/>
+        <path d="M2,16 L2,24 A10,4 0 0,0 22,24 L22,16" fill="#1b1440"/>
+      </g>
+      <text x="64" y="40" class="lbl">SQL &amp; Query</text>
+      <text x="64" y="56" class="sub-lbl">&lt;relational_db&gt;</text>
+    </g>
+
+    <!-- Row 2: Git, Linux, Jupyter -->
+    <!-- Git -->
+    <g transform="translate(10, 150)" class="f3">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- Git Branch Logo -->
+      <g transform="translate(18, 24)">
+        <path d="M16,4 L16,24 M16,14 C20,14 24,18 24,22" fill="none" stroke="#e17055" stroke-width="2.5"/>
+        <circle cx="16" cy="4" r="3.5" fill="#e17055"/>
+        <circle cx="16" cy="24" r="3.5" fill="#e17055"/>
+        <circle cx="24" cy="22" r="3.5" fill="#e17055"/>
+      </g>
+      <text x="64" y="40" class="lbl">Git &amp; GitHub</text>
+      <text x="64" y="56" class="sub-lbl">&lt;version_control&gt;</text>
+    </g>
+
+    <!-- Linux -->
+    <g transform="translate(195, 150)" class="f1">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- Linux Terminal Icon -->
+      <g transform="translate(18, 26)" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
+        <path d="M4,6 L12,12 L4,18"/>
+        <line x1="14" y1="18" x2="24" y2="18" stroke="#00cec9"/>
+      </g>
+      <text x="64" y="40" class="lbl">Linux Systems</text>
+      <text x="64" y="56" class="sub-lbl">&lt;bash_scripting&gt;</text>
+    </g>
+
+    <!-- Jupyter -->
+    <g transform="translate(380, 150)" class="f2">
+      <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
+      <!-- Jupyter icon representation -->
+      <g transform="translate(16, 24)">
+        <circle cx="16" cy="16" r="11" fill="none" stroke="#fdcb6e" stroke-width="1.5" opacity="0.7"/>
+        <ellipse cx="16" cy="16" rx="14" ry="4" fill="none" stroke="#e17055" stroke-width="1.5" transform="rotate(30, 16, 16)"/>
+        <circle cx="16" cy="16" r="4.5" fill="#e17055"/>
+      </g>
+      <text x="64" y="40" class="lbl">Jupyter Lab</text>
+      <text x="64" y="56" class="sub-lbl">&lt;eda_n_research&gt;</text>
+    </g>
+  </g>
+</svg>
