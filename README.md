@@ -137,7 +137,7 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
   </tr>
   <tr>
     <td width="50%" align="center">
-      <img src="https://streak-stats.demolab.com/?user=Ayush-0918&theme=radical&hide_border=true" width="100%"/>
+      <img src="https://streak-stats.demolab.com/?user=Ayush-0918&theme=radical&hide_border=true&v=1.1" width="100%"/>
     </td>
     <td width="50%" align="center">
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayush-0918&theme=react-dark&hide_border=true" width="100%"/>
