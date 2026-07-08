@@ -164,7 +164,7 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 [![Email](https://img.shields.io/badge/Email-Reach_Out-EA4335?style=for-the-badge&amp;logo=gmail)](mailto:ayushpandey10851@gmail.com)
 [![LeetCode](https://img.shields.io/badge/LeetCode-Profile-FFA116?style=for-the-badge&amp;logo=leetcode)](https://leetcode.com/ayushpandey1112)
 
-**Open to MLOps/Data Engineering Internships • Research Collaborations • Hackathon Projects**
+**Open to AI/ML &amp; Data Science Engineering Internships • Research Collaborations • Hackathon Projects**
 
 <img src="https://capsule-render.vercel.app/api?type=waving&amp;color=0:140f38,100:02000a&amp;height=120&amp;section=footer" width="100%"/>
 
