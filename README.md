@@ -129,10 +129,10 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 <table width="100%">
   <tr>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api?username=Ayush-0918&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%"/>
+      <img src="https://github-stats-extended.vercel.app/api?username=Ayush-0918&show_icons=true&theme=radical&hide_border=true&count_private=true&include_all_commits=true" width="100%"/>
     </td>
     <td width="50%" align="center">
-      <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Ayush-0918&layout=compact&theme=radical&hide_border=true" width="100%"/>
+      <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Ayush-0918&layout=compact&theme=radical&hide_border=true" width="100%"/>
     </td>
   </tr>
   <tr>
