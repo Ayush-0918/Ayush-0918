@@ -103,6 +103,8 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 *   **🤖 [J.A.R.V.I.S.](https://github.com/Ayush-0918/J.A.R.V.I.S)** — Voice-activated conversational automation system built for agent-driven task orchestration. `Python · Speech Recognition`
 *   **📊 [Netflix Data EDA](https://github.com/Ayush-0918/Netflix-Data-Visualization-EDA-)** — Exploratory analysis engine analyzing production and distribution trends across global Netflix assets. `Matplotlib · Seaborn · Pandas`
 
+<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:02000a,100:140f38&amp;height=4&amp;section=header" width="100%"/>
+
 ## 🏆 Holographic Achievements Shelf
 
 <div align="center">
