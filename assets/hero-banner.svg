@@ -3,10 +3,20 @@
     <!-- Background Space Gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#02000a"/>
-      <stop offset="40%" stop-color="#07041a"/>
-      <stop offset="80%" stop-color="#0e082c"/>
-      <stop offset="100%" stop-color="#180e44"/>
+      <stop offset="40%" stop-color="#050314"/>
+      <stop offset="80%" stop-color="#0b0622"/>
+      <stop offset="100%" stop-color="#140b38"/>
     </linearGradient>
+
+    <!-- Space Nebulas for WOW Factor -->
+    <radialGradient id="nebulaCyan" cx="20%" cy="30%" r="60%">
+      <stop offset="0%" stop-color="#00cec9" stop-opacity="0.16"/>
+      <stop offset="100%" stop-color="#00cec9" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="nebulaPurple" cx="75%" cy="70%" r="60%">
+      <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0"/>
+    </radialGradient>
     
     <!-- Text Glow Gradient -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
@@ -32,8 +42,8 @@
 
     <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2c2266" stroke-width="0.8" opacity="0.3"/>
-      <circle cx="0" cy="0" r="1.2" fill="#00cec9" opacity="0.25"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2c2266" stroke-width="0.8" opacity="0.25"/>
+      <circle cx="0" cy="0" r="1.2" fill="#00cec9" opacity="0.2"/>
     </pattern>
 
     <!-- Filters -->
@@ -77,15 +87,16 @@
       
       .tech-badge {
         font-family: 'Fira Code', monospace;
-        font-size: 12px;
+        font-size: 11px;
         fill: #00cec9;
         font-weight: 700;
       }
 
       .term-text {
         font-family: 'Fira Code', monospace;
-        font-size: 12px;
+        font-size: 11.5px;
         fill: #e0dbff;
+        line-height: 1.5;
       }
 
       .term-cmd { fill: #f8a5c2; font-weight: 700; }
@@ -111,8 +122,8 @@
       }
 
       @keyframes floatParticle {
-        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
-        50% { transform: translateY(-18px) translateX(12px); opacity: 0.9; }
+        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.25; }
+        50% { transform: translateY(-18px) translateX(12px); opacity: 0.8; }
       }
 
       @keyframes waveFlow {
@@ -156,12 +167,14 @@
     </style>
   </defs>
 
-  <!-- Background -->
+  <!-- Background Layer Stack -->
   <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#nebulaCyan)"/>
+  <rect width="1200" height="320" fill="url(#nebulaPurple)"/>
   <rect width="1200" height="320" fill="url(#grid)"/>
 
   <!-- Neural Connection Circuits -->
-  <g stroke="url(#cardBorder)" stroke-width="1.2" fill="none" class="glow-circuit" opacity="0.6" filter="url(#subtleGlow)">
+  <g stroke="url(#cardBorder)" stroke-width="1.2" fill="none" class="glow-circuit" opacity="0.5" filter="url(#subtleGlow)">
     <path d="M-20,70 L250,70 L290,110 L540,110 L580,70 L650,70" />
     <path d="M120,330 L220,230 L500,230 L540,270 L800,270" />
     <path d="M1120,330 L980,190 L900,190 L850,140 L720,140" />
@@ -174,40 +187,44 @@
     <circle cx="950" cy="120" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
   </g>
 
-  <!-- Floating Particles -->
-  <circle class="particle-slow" cx="120" cy="240" r="2.5" fill="#74b9ff"/>
-  <circle class="particle-fast" cx="350" cy="50" r="2" fill="#a29bfe"/>
-  <circle class="particle-slow" cx="520" cy="280" r="3" fill="#00cec9"/>
-  <circle class="particle-fast" cx="1080" cy="90" r="2" fill="#ff7675"/>
-  <circle class="particle-slow" cx="1000" cy="260" r="2.5" fill="#74b9ff"/>
+  <!-- Floating Particles (Pushed to safe boundaries to prevent overlapping text) -->
+  <circle class="particle-slow" cx="80" cy="50" r="2.5" fill="#74b9ff"/>
+  <circle class="particle-fast" cx="480" cy="270" r="2" fill="#a29bfe"/>
+  <circle class="particle-slow" cx="620" cy="40" r="3" fill="#00cec9"/>
+  <circle class="particle-fast" cx="1120" cy="260" r="2" fill="#ff7675"/>
+  <circle class="particle-slow" cx="1080" cy="60" r="2.5" fill="#74b9ff"/>
 
   <!-- Left Content Column -->
   <g transform="translate(80, 0)">
     <!-- Tech chips header -->
-    <g transform="translate(0, 60)">
-      <rect x="0" y="0" width="140" height="26" rx="13" fill="#150a3a" stroke="#4a3e9c" stroke-width="1.2"/>
-      <circle cx="14" cy="13" r="4.5" fill="#00cec9" filter="url(#subtleGlow)"/>
-      <text x="28" y="17" class="tech-badge">STUDENT AT IITR</text>
+    <g transform="translate(0, 50)">
+      <rect x="0" y="0" width="136" height="24" rx="12" fill="#150a3a" stroke="#4a3e9c" stroke-width="1.2"/>
+      <circle cx="12" cy="12" r="4.5" fill="#00cec9" filter="url(#subtleGlow)"/>
+      <text x="24" y="16" class="tech-badge">STUDENT AT IITR</text>
     </g>
     
     <!-- Main Name -->
-    <text x="0" y="150" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
+    <text x="0" y="132" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
     
     <!-- Subtitle -->
-    <text x="0" y="200" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
+    <text x="0" y="176" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
 
-    <!-- Accent terminal prompt line -->
-    <g transform="translate(0, 240)" font-family="'Fira Code', monospace" font-size="14">
-      <text fill="#57606f" x="0" y="0">❯</text>
-      <text fill="#00cec9" x="18" y="0">npm</text>
-      <text fill="#d5d1ff" x="52" y="0">run</text>
-      <text fill="#ff7675" x="84" y="0">build-awesome-things</text>
-      <text fill="#a29bfe" x="280" y="0">--production</text>
+    <!-- Accent terminal prompt capsule line (WOW factor widget) -->
+    <g transform="translate(0, 212)">
+      <!-- Background terminal capsule -->
+      <rect x="-8" y="-18" width="372" height="28" rx="8" fill="#060312" fill-opacity="0.8" stroke="#22184a" stroke-width="1"/>
+      <text font-family="'Fira Code', monospace" font-size="12" y="0">
+        <tspan fill="#57606f" x="8">❯</tspan>
+        <tspan fill="#00cec9" x="24">npm</tspan>
+        <tspan fill="#d5d1ff" x="56">run</tspan>
+        <tspan fill="#ff7675" x="86">build-awesome-things</tspan>
+        <tspan fill="#a29bfe" x="270">--prod</tspan>
+      </text>
     </g>
   </g>
 
   <!-- Right Content Column: True 3D Terminal -->
-  <g transform="translate(680, 30)">
+  <g transform="translate(685, 30)">
     <!-- 3D Shadow -->
     <g class="shadow-3d">
       <rect x="10" y="15" width="410" height="210" rx="16" fill="#000000" filter="url(#glow)" opacity="0.6"/>
@@ -246,45 +263,65 @@
         </g>
       </g>
       
-      <!-- Code Area -->
-      <g transform="translate(25, 62)" class="term-text">
-        <!-- Line 1 -->
-        <text x="0" y="0">
-          <tspan class="term-cmd">class</tspan> <tspan fill="#ffffff">Developer</tspan>:
-        </text>
-        
-        <!-- Line 2 -->
-        <text x="18" y="20">
-          <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
-        </text>
-        
-        <!-- Line 3 -->
-        <text x="36" y="40">
-          self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
-        </text>
-        
-        <!-- Line 4 -->
-        <text x="36" y="60">
-          self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI Systems &amp; MLOps"</tspan>
-        </text>
-        
-        <!-- Line 5 -->
-        <text x="36" y="80">
-          self.<tspan fill="#81ecec">college</tspan> = <tspan class="term-string">"iHUB, IIT Roorkee"</tspan>
-        </text>
-        
-        <!-- Line 6 -->
-        <text x="18" y="105">
-          <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
-        </text>
-        
-        <!-- Line 7 -->
-        <text x="36" y="125">
-          <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always learning &amp; scaling 🚀"</tspan>
-        </text>
-        
-        <!-- Cursor -->
-        <rect class="cursor" x="36" y="136" width="7" height="13" fill="#00cec9" filter="url(#subtleGlow)"/>
+      <!-- Code Area with Line Numbers (IDE Style) -->
+      <g transform="translate(15, 62)" class="term-text">
+        <!-- Line Numbers Column -->
+        <g fill="#4a3e9c" font-size="10.5" text-anchor="end">
+          <text x="0" y="0">1</text>
+          <text x="0" y="18">2</text>
+          <text x="0" y="36">3</text>
+          <text x="0" y="54">4</text>
+          <text x="0" y="72">5</text>
+          <text x="0" y="90">6</text>
+          <text x="0" y="108">7</text>
+          <text x="0" y="126">8</text>
+        </g>
+
+        <!-- Code Content -->
+        <g transform="translate(12, 0)">
+          <!-- Line 1 -->
+          <text x="0" y="0">
+            <tspan class="term-cmd">class</tspan> <tspan fill="#ffffff">Developer</tspan>:
+          </text>
+          
+          <!-- Line 2 -->
+          <text x="14" y="18">
+            <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
+          </text>
+          
+          <!-- Line 3 -->
+          <text x="28" y="36">
+            self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
+          </text>
+          
+          <!-- Line 4 -->
+          <text x="28" y="54">
+            self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI &amp; MLOps"</tspan>
+          </text>
+          
+          <!-- Line 5 -->
+          <text x="28" y="72">
+            self.<tspan fill="#81ecec">college</tspan> = <tspan class="term-string">"IIT Roorkee"</tspan>
+          </text>
+          
+          <!-- Line 6 (empty spacer) -->
+          <text x="14" y="90">
+            <!-- empty line -->
+          </text>
+          
+          <!-- Line 7 -->
+          <text x="14" y="108">
+            <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
+          </text>
+          
+          <!-- Line 8 -->
+          <text x="28" y="126">
+            <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always learning 🚀"</tspan>
+          </text>
+          
+          <!-- Blinking Cursor -->
+          <rect class="cursor" x="188" y="115" width="7" height="13" fill="#00cec9" filter="url(#subtleGlow)"/>
+        </g>
       </g>
     </g>
   </g>

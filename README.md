@@ -16,12 +16,6 @@
 
 <br/>
 
-<div align="center">
-<img src="assets/terminal-console.svg" width="100%"/>
-</div>
-
-<br/>
-
 <table width="100%">
 <tr>
 <td width="30%" align="center" valign="middle">
@@ -39,6 +33,12 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 </td>
 </tr>
 </table>
+
+<br/>
+
+<div align="center">
+<img src="assets/terminal-console.svg" width="100%"/>
+</div>
 
 <br/>
 
