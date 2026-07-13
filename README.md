@@ -17,25 +17,7 @@
 <br/>
 
 <div align="center">
-<table width="100%" style="background-color: #050316; border: 1.5px solid #2c2266; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 13px;">
-<tr>
-<td style="padding: 18px; border: none; line-height: 1.5;">
-<pre>
-<font color="#55efc4"><b>[ayush@iHUB-IITR ~]$</b></font> neofetch --3d-profile
-<font color="#a29bfe"><b>OS</b></font>: macOS Sequoia 15.0 (AI Platform Developer Environment)
-<font color="#a29bfe"><b>Host</b></font>: iHUB DivyaSampark, IIT Roorkee
-<font color="#a29bfe"><b>Kernel</b></font>: AI &amp; Data Science Program
-<font color="#a29bfe"><b>Shell</b></font>: zsh (customized-3d-console)
-<font color="#a29bfe"><b>Uptime</b></font>: 20 yrs, 9 mos (Runtime: Always Learning)
-<font color="#a29bfe"><b>Packages</b></font>: PyTorch, TensorFlow, OpenCV, FastAPI, Kotlin, Compose
-<font color="#a29bfe"><b>Terminal</b></font>: 3D-Isometric-Terminal-Holo (Assets Active)
-<font color="#a29bfe"><b>CPU</b></font>: Neural-Network-Model-Architect (8 Cores)
-<font color="#a29bfe"><b>Memory</b></font>: Infinite-Curiosity / 100% Allocation
-<font color="#a29bfe"><b>Status</b></font>: <font color="#55efc4"><b>🟢 ACTIVE // MLOPS_ONLINE // SOURCE_OPEN</b></font>
-</pre>
-</td>
-</tr>
-</table>
+<img src="assets/terminal-console.svg" width="100%"/>
 </div>
 
 <br/>
@@ -62,6 +44,13 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 
 <img src="https://raw.githubusercontent.com/Ayush-0918/Ayush-0918/output/github-contribution-grid-snake-dark.svg" width="100%"/>
 <div align="center"><sub>🛸 <b>Commit Engine Status</b> • Live contribution snake eating away at code blocks in real time.</sub></div>
+
+<br/>
+
+<div align="center">
+<img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
+<sub>💡 <b>3D Contribution Space</b> • Contribution matrix generated dynamically based on active commits to public and private repositories.</sub>
+</div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:02000a,100:140f38&amp;height=4&amp;section=header" width="100%"/>
 
@@ -168,15 +157,6 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
     </td>
   </tr>
 </table>
-</div>
-
-<br/>
-
-### 🧊 3D Contribution Space
-
-<div align="center">
-<img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
-<sub>💡 3D contribution matrix generated dynamically based on active commits to public and private production codebases.</sub>
 </div>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
