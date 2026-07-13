@@ -3,48 +3,71 @@
     <!-- Background Gradients -->
     <linearGradient id="abg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#02000a"/>
+      <stop offset="50%" stop-color="#050316"/>
       <stop offset="100%" stop-color="#0d0829"/>
     </linearGradient>
 
-    <!-- Hologram Beam Gradients -->
-    <linearGradient id="holoBeam" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#00cec9" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#00cec9" stop-opacity="0.05"/>
-      <stop offset="100%" stop-color="#00cec9" stop-opacity="0"/>
-    </linearGradient>
-
+    <!-- Hologram Beams -->
     <linearGradient id="holoGold" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#fdcb6e" stop-opacity="0.05"/>
+      <stop offset="0%" stop-color="#fdcb6e" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#fdcb6e" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#fdcb6e" stop-opacity="0"/>
     </linearGradient>
 
     <linearGradient id="holoPurple" x1="0%" y1="100%" x2="0%" y2="0%">
-      <stop offset="0%" stop-color="#a29bfe" stop-opacity="0.4"/>
-      <stop offset="70%" stop-color="#a29bfe" stop-opacity="0.05"/>
+      <stop offset="0%" stop-color="#a29bfe" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#a29bfe" stop-opacity="0.08"/>
       <stop offset="100%" stop-color="#a29bfe" stop-opacity="0"/>
     </linearGradient>
 
-    <!-- Metallic Gold Gradient -->
+    <linearGradient id="holoCyan" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#00cec9" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#00cec9" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#00cec9" stop-opacity="0"/>
+    </linearGradient>
+
+    <linearGradient id="holoRed" x1="0%" y1="100%" x2="0%" y2="0%">
+      <stop offset="0%" stop-color="#ff7675" stop-opacity="0.45"/>
+      <stop offset="75%" stop-color="#ff7675" stop-opacity="0.08"/>
+      <stop offset="100%" stop-color="#ff7675" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Pedestal Metallic side shading -->
+    <linearGradient id="metalSide" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#09061c"/>
+      <stop offset="25%" stop-color="#1b134d"/>
+      <stop offset="50%" stop-color="#241968"/>
+      <stop offset="75%" stop-color="#1b134d"/>
+      <stop offset="100%" stop-color="#09061c"/>
+    </linearGradient>
+
+    <!-- Metallic Gold -->
     <linearGradient id="gold" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffeaa7"/>
       <stop offset="50%" stop-color="#fdcb6e"/>
-      <stop offset="100%" stop-color="#e1b12c"/>
+      <stop offset="100%" stop-color="#d6a22b"/>
     </linearGradient>
-
     <linearGradient id="silver" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#ffffff"/>
       <stop offset="50%" stop-color="#dcdde1"/>
       <stop offset="100%" stop-color="#7f8c8d"/>
     </linearGradient>
 
-    <!-- Grid pattern -->
+    <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d1742" stroke-width="0.8" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d164c" stroke-width="0.8" opacity="0.3"/>
     </pattern>
 
+    <!-- Filters -->
     <filter id="neon" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="subtleGlow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
@@ -63,27 +86,31 @@
       }
       
       .t-title { 
-        font-family: 'Outfit', -apple-system, sans-serif; 
+        font-family: 'Outfit', sans-serif; 
         font-size: 13.5px; 
         fill: #ffffff; 
-        font-weight: 700; 
+        font-weight: 800; 
       }
       
       .t-desc { 
         font-family: 'Fira Code', monospace; 
         font-size: 10px; 
         fill: #a29bfe; 
+        font-weight: 500;
       }
 
-      /* Holographic slow float and pulse */
-      @keyframes float1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
-      @keyframes float2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
-      @keyframes float3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
-      @keyframes float4 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
-      
+      /* Hover Floating &amp; Ring Rotations */
+      @keyframes float1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-10px); } }
+      @keyframes float2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
+      @keyframes float3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-12px); } }
+      @keyframes float4 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-8px); } }
+      @keyframes ringOscillate {
+        0%, 100% { transform: rotate(0deg) scaleY(1); }
+        50% { transform: rotate(180deg) scaleY(0.85); }
+      }
       @keyframes beamPulse {
         0%, 100% { opacity: 0.15; }
-        50% { opacity: 0.35; }
+        50% { opacity: 0.45; }
       }
 
       .f1 { animation: float1 4s infinite ease-in-out; }
@@ -92,11 +119,12 @@
       .f4 { animation: float4 3.8s infinite ease-in-out 0.9s; }
 
       .beam { animation: beamPulse 3s infinite ease-in-out; }
-      
-      .pod:hover .pod-base {
+      .holo-ring { animation: ringOscillate 6s infinite linear; transform-origin: center; }
+
+      .pod:hover .pod-top {
         stroke: #00cec9;
         filter: url(#neon);
-        transition: all 0.3s ease;
+        fill-opacity: 0.95;
       }
     </style>
   </defs>
@@ -106,191 +134,229 @@
   <rect width="1200" height="420" fill="url(#grid)"/>
 
   <text x="40" y="45" class="h-title">❯ ACCOLADES &amp; MILESTONES</text>
-  <line x1="40" y1="55" x2="350" y2="55" stroke="#3e387c" stroke-width="1.5"/>
+  <line x1="40" y1="55" x2="350" y2="55" stroke="#2c2266" stroke-width="1.5"/>
 
   <!-- ================= ROW 1 ================= -->
   <!-- POD 1: 1st Place AgriTech -->
   <g transform="translate(150, 60)" class="pod">
-    <!-- Hologram light beam -->
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoGold)" class="beam"/>
-    <!-- Pedestal Base -->
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#fdcb6e" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#fdcb6e" stroke-width="1" opacity="0.5"/>
+    <!-- Hologram cone -->
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoGold)" class="beam"/>
     
-    <!-- Floating Trophy Artwork (translate y=20 outer, floating inner) -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <!-- Cylinder Side Wall -->
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <!-- Cylinder Top Face -->
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#fdcb6e" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#fdcb6e" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Trophy Floating -->
+    <g transform="translate(0, 15)">
       <g class="f1">
-        <!-- Golden Trophy -->
-        <path d="M-15,-10 L15,-10 L12,15 C9,22 5,25 0,25 C-5,25 -9,22 -12,15 Z" fill="url(#gold)"/>
-        <path d="M-4,-10 L4,-10 L4,-22 L-4,-22 Z" fill="url(#gold)"/>
-        <rect x="-18" y="-28" width="36" height="6" rx="2" fill="url(#gold)"/>
-        <!-- Handles -->
-        <path d="M-14,-3 C-22,-3 -22,12 -12,12" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
-        <path d="M14,-3 C22,-3 22,12 12,12" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
-        <!-- Star spark -->
-        <path d="M-22,-18 L-20,-14 L-16,-12 L-20,-10 L-22,-6 L-24,-10 L-28,-12 L-24,-14 Z" fill="#fff" filter="url(#neon)"/>
+        <!-- 3D Trophy -->
+        <path d="M-14,-12 L14,-12 L11,12 C8,18 4,21 0,21 C-4,21 -8,18 -11,12 Z" fill="url(#gold)"/>
+        <path d="M-4,-12 L4,-12 L4,-24 L-4,-24 Z" fill="url(#gold)"/>
+        <rect x="-18" y="-30" width="36" height="6" rx="2" fill="url(#gold)"/>
+        <path d="M-13,-5 C-20,-5 -20,10 -11,10" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+        <path d="M13,-5 C20,-5 20,10 11,10" fill="none" stroke="url(#gold)" stroke-width="2.5"/>
+        
+        <!-- Rotating Holographic Ring -->
+        <ellipse cx="0" cy="-5" rx="22" ry="6" fill="none" stroke="#fdcb6e" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        
+        <!-- Swirling sparkles -->
+        <circle cx="-25" cy="-20" r="1.5" fill="#fff" opacity="0.8"><animate attributeName="cy" values="-20;-28;-20" dur="3s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+        <circle cx="22" cy="10" r="1" fill="#fff" opacity="0.6"><animate attributeName="cy" values="10;2;10" dur="4s" repeatCount="indefinite"/><animate attributeName="opacity" values="0.8;0.2;0.8" dur="4s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <!-- Label -->
-    <text x="0" y="145" text-anchor="middle" class="t-title">1st Place — AgriTech</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">Code Crafter 3.0</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">1st Place — AgriTech</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">Code Crafter 3.0</text>
   </g>
 
   <!-- POD 2: Best UI/UX -->
   <g transform="translate(390, 60)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoPurple)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#a29bfe" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoPurple)" class="beam"/>
     
-    <!-- Palette Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#a29bfe" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#a29bfe" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Floating Palette -->
+    <g transform="translate(0, 15)">
       <g class="f2">
-        <!-- Palette base -->
         <path d="M-15,-15 C-25,-15 -25,15 -10,20 C0,25 20,20 20,5 C20,-10 5,-15 -15,-15 Z" fill="url(#silver)"/>
-        <circle cx="-10" cy="12" r="4" fill="#09061a"/> <!-- thumb hole -->
-        <!-- Color dots -->
-        <circle cx="-12" cy="-6" r="3.5" fill="#e17055"/>
-        <circle cx="-4" cy="-10" r="3.5" fill="#fdcb6e"/>
-        <circle cx="8" cy="-8" r="3.5" fill="#00b894"/>
-        <circle cx="12" cy="0" r="3.5" fill="#0984e3"/>
-        <!-- Brush -->
-        <path d="M-5,15 L22,-18 L26,-14 L-1,19 Z" fill="#8a86c9"/>
+        <circle cx="-10" cy="10" r="4.5" fill="#0c072b"/>
+        <circle cx="-12" cy="-6" r="3.5" fill="#ff7675"/>
+        <circle cx="-3" cy="-11" r="3.5" fill="#fdcb6e"/>
+        <circle cx="8" cy="-8" r="3.5" fill="#55efc4"/>
+        <circle cx="12" cy="0" r="3.5" fill="#74b9ff"/>
+        <!-- 3D Brush -->
+        <path d="M-5,16 L22,-18 L26,-14 L-1,20 Z" fill="#8a86c9"/>
         <path d="M22,-18 L25,-22 L29,-18 L26,-14 Z" fill="#fdcb6e"/>
+        <ellipse cx="0" cy="5" rx="22" ry="6" fill="none" stroke="#a29bfe" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="-20" cy="-22" r="1.5" fill="#fff" opacity="0.7"><animate attributeName="cy" values="-22;-27;-22" dur="3.5s" repeatCount="indefinite"/></circle>
+        <circle cx="24" cy="-5" r="1" fill="#fff" opacity="0.5"><animate attributeName="opacity" values="0.1;0.9;0.1" dur="2.5s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">Best UI/UX Award</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">National Winner</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">Best UI/UX Award</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">National Winner</text>
   </g>
 
   <!-- POD 3: Rank #4 / 150+ -->
   <g transform="translate(630, 60)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoBeam)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#00cec9" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#00cec9" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoCyan)" class="beam"/>
     
-    <!-- Shield Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#00cec9" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#00cec9" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Floating Shield -->
+    <g transform="translate(0, 15)">
       <g class="f3">
-        <!-- Outer Shield -->
-        <path d="M-16,-20 L16,-20 L16,0 C16,12 0,22 0,22 C0,22 -16,12 -16,0 Z" fill="none" stroke="#00cec9" stroke-width="2.5" filter="url(#neon)"/>
-        <path d="M-12,-16 L12,-16 L12,0 C12,9 0,17 0,17 C0,17 -12,9 -12,0 Z" fill="#00cec9" opacity="0.3"/>
-        <!-- Number 4 -->
-        <text x="0" y="6" font-family="'Outfit', sans-serif" font-size="19" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+        <path d="M-16,-18 L16,-18 L16,0 C16,12 0,22 0,22 C0,22 -16,12 -16,0 Z" fill="none" stroke="#00cec9" stroke-width="2.5" filter="url(#neon)"/>
+        <path d="M-12,-14 L12,-14 L12,0 C12,9 0,17 0,17 C0,17 -12,9 -12,0 Z" fill="#00cec9" opacity="0.35"/>
+        <text x="0" y="7" font-family="'Outfit', sans-serif" font-size="18" font-weight="800" fill="#fff" text-anchor="middle">4</text>
+        <ellipse cx="0" cy="0" rx="22" ry="6" fill="none" stroke="#00cec9" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="-24" cy="5" r="1.5" fill="#fff" opacity="0.7"><animate attributeName="cy" values="5;-2;5" dur="3s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">Rank #4 / 150+</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">Overall Hackathon Teams</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">Rank #4 / 150+</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">Overall Hackathon Teams</text>
   </g>
 
   <!-- POD 4: Top 16 Team DevCreate -->
   <g transform="translate(870, 60)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoPurple)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#a29bfe" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoPurple)" class="beam"/>
     
-    <!-- Star Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#a29bfe" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#a29bfe" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Floating Star Trophy -->
+    <g transform="translate(0, 15)">
       <g class="f4">
         <path d="M0,-24 L6,-8 L22,-6 L10,6 L14,22 L0,14 L-14,22 L-10,6 L-22,-6 L-6,-8 Z" fill="url(#silver)" stroke="#a29bfe" stroke-width="1"/>
-        <circle cx="0" cy="0" r="4" fill="#a29bfe" filter="url(#neon)"/>
+        <circle cx="0" cy="0" r="4.5" fill="#a29bfe" filter="url(#neon)"/>
+        <ellipse cx="0" cy="0" rx="22" ry="6" fill="none" stroke="#a29bfe" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="26" cy="-10" r="1.5" fill="#fff" opacity="0.8"><animate attributeName="cy" values="-10;-15;-10" dur="4.2s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">Top 16 Finalist</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">DevCreate BuildFest</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">Top 16 Finalist</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">DevCreate BuildFest</text>
   </g>
 
   <!-- ================= ROW 2 ================= -->
   <!-- POD 5: HiLabs GenAI -->
   <g transform="translate(150, 240)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoPurple)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#a29bfe" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoRed)" class="beam"/>
     
-    <!-- Healthcare Heart + Nodes Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#ff7675" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#ff7675" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Heart pulse floating -->
+    <g transform="translate(0, 15)">
       <g class="f3">
-        <!-- Heart -->
         <path d="M12,-18 C17,-18 20,-12 20,-7 C20,3 10,13 0,21 C-10,13 -20,3 -20,-7 C-20,-12 -17,-18 -12,-18 C-7,-18 -3,-14 0,-10 C3,-14 7,-18 12,-18 Z" fill="#ff7675" opacity="0.4"/>
-        <!-- Pulse Line -->
-        <path d="M-15,-5 L-7,-5 L-4,-12 L0,5 L3,-8 L6,-5 L15,-5" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        <path d="M-15,-4 L-7,-4 L-4,-12 L0,5 L3,-8 L6,-4 L15,-4" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+        <ellipse cx="0" cy="2" rx="22" ry="6" fill="none" stroke="#ff7675" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="20" cy="-18" r="1.5" fill="#fff" opacity="0.7"><animate attributeName="cy" values="-18;-22;-18" dur="3s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">HiLabs Healthcare</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">GenAI Workshop</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">HiLabs Healthcare</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">GenAI Workshop</text>
   </g>
 
   <!-- POD 6: MS Learn Grad -->
   <g transform="translate(390, 240)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoBeam)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#00cec9" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#00cec9" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoCyan)" class="beam"/>
     
-    <!-- Graduation Cap Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#00cec9" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#00cec9" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Graduation Cap Floating -->
+    <g transform="translate(0, 15)">
       <g class="f4">
-        <!-- Cap Base -->
         <path d="M-10,5 L-10,14 C-10,17 0,20 0,20 C0,20 10,17 10,14 L10,5" fill="#00cec9" stroke="#fff" stroke-width="1"/>
-        <!-- Cap Diamond -->
         <polygon points="0,-16 22,-6 0,4 -22,-6" fill="url(#silver)" stroke="#00cec9" stroke-width="1.5"/>
-        <!-- Tassel -->
         <path d="M0,-6 L18,2 L18,10" fill="none" stroke="#fdcb6e" stroke-width="1.5" stroke-linecap="round"/>
+        <ellipse cx="0" cy="2" rx="22" ry="6" fill="none" stroke="#00cec9" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="-22" cy="-10" r="1.5" fill="#fff" opacity="0.8"><animate attributeName="cy" values="-10;-16;-10" dur="3.8s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">MS Learn AI</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">Foundations Grad</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">MS Learn AI</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">Foundations Grad</text>
   </g>
 
   <!-- POD 7: IIT Roorkee Scholar -->
   <g transform="translate(630, 240)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoGold)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#fdcb6e" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#fdcb6e" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoGold)" class="beam"/>
     
-    <!-- Classical Portico / Scholar Shield Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#fdcb6e" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#fdcb6e" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Classical Portico Floating -->
+    <g transform="translate(0, 15)">
       <g class="f1">
-        <!-- Portico Pillars & Pediment -->
         <polygon points="-18,-14 0,-24 18,-14" fill="url(#gold)"/>
         <rect x="-16" y="-12" width="32" height="3" fill="url(#gold)"/>
-        <!-- Columns -->
         <line x1="-12" y1="-9" x2="-12" y2="12" stroke="#fff" stroke-width="2.5"/>
         <line x1="0" y1="-9" x2="0" y2="12" stroke="#fff" stroke-width="2.5"/>
         <line x1="12" y1="-9" x2="12" y2="12" stroke="#fff" stroke-width="2.5"/>
-        <!-- Base -->
         <rect x="-18" y="12" width="36" height="5" fill="url(#gold)"/>
+        <ellipse cx="0" cy="2" rx="22" ry="6" fill="none" stroke="#fdcb6e" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="24" cy="5" r="1.5" fill="#fff" opacity="0.8"><animate attributeName="cy" values="5;0;5" dur="3.3s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">IIT Roorkee scholar</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">AI &amp; Data Science Program</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">IIT Roorkee Scholar</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">AI &amp; Data Science Program</text>
   </g>
 
   <!-- POD 8: AWS Solutions -->
   <g transform="translate(870, 240)" class="pod">
-    <polygon points="-40,110 40,110 25,10 -25,10" fill="url(#holoPurple)" class="beam"/>
-    <ellipse cx="0" cy="110" rx="45" ry="12" fill="#140f38" stroke="#a29bfe" stroke-width="1.5" class="pod-base"/>
-    <ellipse cx="0" cy="110" rx="35" ry="9" fill="none" stroke="#a29bfe" stroke-width="1" opacity="0.5"/>
+    <polygon points="-40,110 40,110 20,10 -20,10" fill="url(#holoPurple)" class="beam"/>
     
-    <!-- Cloud Gateway Artwork -->
-    <g transform="translate(0, 20)">
+    <!-- 3D Pedestal Base -->
+    <ellipse cx="0" cy="126" rx="46" ry="12" fill="#070415" opacity="0.8"/>
+    <path d="M -46,110 L -46,126 A 46,12 0 0,0 46,126 L 46,110 A 46,12 0 0,1 -46,110 Z" fill="url(#metalSide)" stroke="#302068" stroke-width="0.8"/>
+    <ellipse cx="0" cy="110" rx="46" ry="12" fill="#1b1248" stroke="#a29bfe" stroke-width="1.8" class="pod-top" filter="url(#subtleGlow)"/>
+    <ellipse cx="0" cy="110" rx="36" ry="9" fill="none" stroke="#a29bfe" stroke-width="0.8" opacity="0.4"/>
+    
+    <!-- Cloud & Key Floating -->
+    <g transform="translate(0, 15)">
       <g class="f2">
-        <!-- Cloud Outline -->
-        <path d="M-15,4 C-20,4 -22,-1 -19,-5 C-21,-12 -12,-16 -6,-13 C-2,-18 10,-17 12,-10 C18,-10 19,-3 14,2 C12,5 -15,4 -15,4 Z" fill="#140f38" stroke="#a29bfe" stroke-width="2" filter="url(#neon)"/>
-        <!-- Key symbol -->
-        <circle cx="0" cy="2" r="3.5" fill="none" stroke="#fff" stroke-width="1.5"/>
-        <line x1="3.5" y1="2" x2="12" y2="2" stroke="#fff" stroke-width="1.5"/>
-        <line x1="8" y1="2" x2="8" y2="6" stroke="#fff" stroke-width="1.5"/>
-        <line x1="11" y1="2" x2="11" y2="6" stroke="#fff" stroke-width="1.5"/>
+        <path d="M-15,4 C-20,4 -22,-1 -19,-5 C-21,-12 -12,-16 -6,-13 C-2,-18 10,-17 12,-10 C18,-10 19,-3 14,2 C12,5 -15,4 -15,4 Z" fill="#140f38" stroke="#a29bfe" stroke-width="2" filter="url(#subtleGlow)"/>
+        <!-- Gold Key inside cloud -->
+        <circle cx="0" cy="2" r="3.5" fill="none" stroke="#fdcb6e" stroke-width="1.5"/>
+        <line x1="3.5" y1="2" x2="12" y2="2" stroke="#fdcb6e" stroke-width="1.5"/>
+        <line x1="8" y1="2" x2="8" y2="6" stroke="#fdcb6e" stroke-width="1.5"/>
+        <line x1="11" y1="2" x2="11" y2="6" stroke="#fdcb6e" stroke-width="1.5"/>
+        <ellipse cx="0" cy="2" rx="22" ry="6" fill="none" stroke="#a29bfe" stroke-width="1" class="holo-ring" opacity="0.7"/>
+        <circle cx="-25" cy="-5" r="1.5" fill="#fff" opacity="0.8"><animate attributeName="cy" values="-5;-12;-5" dur="3.5s" repeatCount="indefinite"/></circle>
       </g>
     </g>
     
-    <text x="0" y="145" text-anchor="middle" class="t-title">AWS Solutions</text>
-    <text x="0" y="160" text-anchor="middle" class="t-desc">Architecture Scholar</text>
+    <text x="0" y="155" text-anchor="middle" class="t-title">AWS Solutions</text>
+    <text x="0" y="170" text-anchor="middle" class="t-desc">Architecture Scholar</text>
   </g>
 </svg>

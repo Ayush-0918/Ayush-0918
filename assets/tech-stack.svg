@@ -1,72 +1,81 @@
-<svg width="1200" height="300" viewBox="0 0 1200 300" xmlns="http://www.w3.org/2000/svg">
+<svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="tbg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <!-- Background Space Gradient -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#02000a"/>
-      <stop offset="100%" stop-color="#0e0a2b"/>
+      <stop offset="50%" stop-color="#060418"/>
+      <stop offset="100%" stop-color="#0c072c"/>
     </linearGradient>
 
-    <!-- Card Background Glow -->
-    <linearGradient id="cardGlow" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#1b1440"/>
-      <stop offset="100%" stop-color="#0a0820"/>
-    </linearGradient>
-
-    <!-- Logo Gradients -->
-    <linearGradient id="pythonGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#387eb8"/>
-      <stop offset="100%" stop-color="#ffe052"/>
-    </linearGradient>
-
-    <linearGradient id="pytorchGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ee4c2c"/>
-      <stop offset="100%" stop-color="#ff7675"/>
-    </linearGradient>
-
-    <linearGradient id="tfGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#ff9f43"/>
-      <stop offset="100%" stop-color="#ee5253"/>
-    </linearGradient>
-
-    <linearGradient id="genAiGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00cec9"/>
-      <stop offset="100%" stop-color="#a29bfe"/>
-    </linearGradient>
-
-    <linearGradient id="cloudGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#74b9ff"/>
-      <stop offset="100%" stop-color="#0984e3"/>
-    </linearGradient>
-
-    <!-- Grid pattern -->
+    <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#241e54" stroke-width="0.8" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1d164c" stroke-width="0.8" opacity="0.35"/>
     </pattern>
 
-    <filter id="cardNeon" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="5" result="blur"/>
+    <!-- Glowing Filters -->
+    <filter id="tileGlow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
       <feMerge>
         <feMergeNode in="blur"/>
         <feMergeNode in="SourceGraphic"/>
       </feMerge>
     </filter>
+    <filter id="shadowBlur" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="4"/>
+    </filter>
+
+    <!-- Tile Gradients -->
+    <!-- Python -->
+    <linearGradient id="pyTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3b3b75"/><stop offset="100%" stop-color="#14143a"/>
+    </linearGradient>
+    <linearGradient id="pyEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#387eb8"/><stop offset="100%" stop-color="#ffe052"/>
+    </linearGradient>
+
+    <!-- PyTorch -->
+    <linearGradient id="torchTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4e2c2c"/><stop offset="100%" stop-color="#1c1111"/>
+    </linearGradient>
+    <linearGradient id="torchEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ee4c2c"/><stop offset="100%" stop-color="#ff7675"/>
+    </linearGradient>
+
+    <!-- TensorFlow -->
+    <linearGradient id="tfTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#52392b"/><stop offset="100%" stop-color="#1e130d"/>
+    </linearGradient>
+    <linearGradient id="tfEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#ff9f43"/><stop offset="100%" stop-color="#ee5253"/>
+    </linearGradient>
+
+    <!-- OpenCV -->
+    <linearGradient id="cvTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#223a2d"/><stop offset="100%" stop-color="#0a1410"/>
+    </linearGradient>
+    <linearGradient id="cvEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00b894"/><stop offset="100%" stop-color="#0984e3"/>
+    </linearGradient>
+
+    <!-- GenAI -->
+    <linearGradient id="genTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2d3d52"/><stop offset="100%" stop-color="#121822"/>
+    </linearGradient>
+    <linearGradient id="genEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#00cec9"/><stop offset="100%" stop-color="#a29bfe"/>
+    </linearGradient>
+
+    <!-- NLP -->
+    <linearGradient id="nlpTop" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3a2b52"/><stop offset="100%" stop-color="#160e22"/>
+    </linearGradient>
+    <linearGradient id="nlpEdge" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#a29bfe"/><stop offset="100%" stop-color="#ff7675"/>
+    </linearGradient>
 
     <style>
-      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;family=Outfit:wght@500;700&amp;display=swap');
+      @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;family=Outfit:wght@600;800&amp;display=swap');
       
-      .lbl { 
-        font-family: 'Outfit', -apple-system, sans-serif; 
-        font-size: 15px; 
-        font-weight: 700; 
-        fill: #ffffff; 
-      }
-      
-      .sub-lbl { 
-        font-family: 'Fira Code', monospace; 
-        font-size: 10px; 
-        fill: #a29bfe; 
-      }
-
       .cat-title { 
         font-family: 'Fira Code', monospace; 
         font-size: 13px; 
@@ -74,238 +83,264 @@
         fill: #00cec9; 
         letter-spacing: 2px;
       }
+
+      .lbl { 
+        font-family: 'Outfit', sans-serif; 
+        font-size: 14px; 
+        font-weight: 800; 
+        fill: #ffffff; 
+      }
       
-      .cat-desc {
-        font-family: 'Outfit', -apple-system, sans-serif;
-        font-size: 12px;
-        fill: #8a86c9;
+      .sub-lbl { 
+        font-family: 'Fira Code', monospace; 
+        font-size: 9px; 
+        fill: #a29bfe; 
       }
 
-      /* Float animations with different offsets */
-      @keyframes float1 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-5px); } }
-      @keyframes float2 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-7px); } }
-      @keyframes float3 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-4px); } }
-      @keyframes float4 { 0%, 100% { transform: translateY(0px); } 50% { transform: translateY(-6px); } }
+      /* Synchronized Float &amp; Shadow animations with staggered delays */
+      @keyframes hoverUp {
+        0%, 100% { transform: translateY(0px); }
+        50% { transform: translateY(-9px); }
+      }
+      @keyframes shadowShrink {
+        0%, 100% { opacity: 0.5; transform: scale(1) translate(0px, 0px); }
+        50% { opacity: 0.25; transform: scale(0.85) translate(4px, 2px); }
+      }
+      @keyframes pulseGrid {
+        0%, 100% { opacity: 0.35; }
+        50% { opacity: 0.85; }
+      }
 
-      .f1 { animation: float1 4s infinite ease-in-out; }
-      .f2 { animation: float2 4.5s infinite ease-in-out 0.5s; }
-      .f3 { animation: float3 3.8s infinite ease-in-out 1s; }
-      .f4 { animation: float4 4.2s infinite ease-in-out 1.5s; }
+      .float-group-1 { animation: hoverUp 4s infinite ease-in-out; }
+      .shadow-group-1 { animation: shadowShrink 4s infinite ease-in-out; }
 
-      .glow-item:hover {
+      .float-group-2 { animation: hoverUp 4.4s infinite ease-in-out 0.5s; }
+      .shadow-group-2 { animation: shadowShrink 4.4s infinite ease-in-out 0.5s; }
+
+      .float-group-3 { animation: hoverUp 3.8s infinite ease-in-out 1s; }
+      .shadow-group-3 { animation: shadowShrink 3.8s infinite ease-in-out 1s; }
+
+      .float-group-4 { animation: hoverUp 4.2s infinite ease-in-out 1.5s; }
+      .shadow-group-4 { animation: shadowShrink 4.2s infinite ease-in-out 1.5s; }
+
+      .back-circuits { animation: pulseGrid 4s infinite ease-in-out; }
+
+      /* Hover glow */
+      .tile-g:hover .top-face {
+        fill-opacity: 0.95;
         stroke: #00cec9;
-        filter: url(#cardNeon);
-        transition: all 0.3s ease;
       }
     </style>
   </defs>
 
   <!-- Background -->
-  <rect width="1200" height="300" fill="url(#tbg)"/>
-  <rect width="1200" height="300" fill="url(#grid)"/>
+  <rect width="1200" height="320" fill="url(#bg)"/>
+  <rect width="1200" height="320" fill="url(#grid)"/>
 
-  <!-- Left Column: AI and DATA SCIENCE -->
+  <!-- Background Connecting Circuit Lines (Left Column) -->
+  <g class="back-circuits" stroke="#221b5b" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 50,120 L 430,120 L 430,225 L 50,225 Z"/>
+    <path d="M 235,120 L 235,225 M 50,120 L 235,225 M 430,120 L 235,225"/>
+  </g>
+
+  <!-- Background Connecting Circuit Lines (Right Column) -->
+  <g class="back-circuits" stroke="#221b5b" stroke-width="1.5" fill="none" opacity="0.5">
+    <path d="M 650,120 L 1030,120 L 1030,225 L 650,225 Z"/>
+    <path d="M 835,120 L 835,225 M 650,120 L 835,225 M 1030,120 L 835,225"/>
+  </g>
+
+  <!-- ================= LEFT COLUMN: AI & DATA SCIENCE ================= -->
   <g transform="translate(40, 20)">
-    <!-- Column Title -->
     <text x="10" y="25" class="cat-title">❯ AI, DATA SCIENCE &amp; CORE MODELS</text>
-    <line x1="10" y1="35" x2="350" y2="35" stroke="#3e387c" stroke-width="1.5"/>
+    <line x1="10" y1="35" x2="350" y2="35" stroke="#2c2266" stroke-width="1.5"/>
 
     <!-- Row 1: Python, PyTorch, TensorFlow -->
-    <!-- Python -->
-    <g transform="translate(10, 55)">
-      <g class="f1">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- Python Logo Path -->
-        <g transform="translate(16, 24)">
-          <path d="M16,2 C7.5,2 8,5.7 8,5.7 L8,9.3 L16,9.3 L16,10.5 L5.2,10.5 C5.2,10.5 2,10.1 2,18.5 C2,27 4.8,26.5 4.8,26.5 L7.7,26.5 L7.7,22.3 C7.7,17.2 11.9,13.2 17,13.2 L24.3,13.2 C24.3,13.2 27.8,13.2 27.8,5.2 C27.8,-2.8 16,2 16,2 Z" fill="#387eb8"/>
-          <path d="M16,30 C24.5,30 24,26.3 24,26.3 L24,22.7 L16,22.7 L16,21.5 L26.8,21.5 C26.8,21.5 30,21.9 30,13.5 C30,5 27.2,5.5 27.2,5.5 L24.3,5.5 L24.3,9.7 C24.3,14.8 20.1,18.8 15,18.8 L7.7,18.8 C7.7,18.8 4.2,18.8 4.2,26.8 C4.2,34.8 16,30 16,30 Z" fill="#ffe052"/>
-          <circle cx="12" cy="6" r="1.5" fill="#fff"/>
-          <circle cx="20" cy="26" r="1.5" fill="#fff"/>
+    <!-- Python Tile -->
+    <g transform="translate(10, 100)" class="tile-g">
+      <polygon class="shadow-group-1" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-1">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#242456" stroke="url(#pyEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#141430" stroke="url(#pyEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#pyTop)" stroke="#4e4eb2" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-50, -8) scale(0.9)">
+          <circle cx="10" cy="8" r="7" fill="#387eb8"/>
+          <circle cx="18" cy="8" r="7" fill="#ffe052"/>
+          <text x="32" y="12" class="lbl">Python</text>
         </g>
-        <text x="64" y="40" class="lbl">Python</text>
-        <text x="64" y="56" class="sub-lbl">&lt;core_language&gt;</text>
       </g>
     </g>
 
-    <!-- PyTorch -->
-    <g transform="translate(195, 55)">
-      <g class="f2">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- PyTorch Logo Path -->
-        <g transform="translate(16, 24)">
-          <path d="M16,2 L27.7,22.3 L16,27.7 L4.3,22.3 Z" fill="url(#pytorchGrad)"/>
-          <circle cx="16" cy="12" r="5" fill="#fff"/>
+    <!-- PyTorch Tile -->
+    <g transform="translate(195, 100)" class="tile-g">
+      <polygon class="shadow-group-2" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-2">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#381b1b" stroke="url(#torchEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#1c0f0f" stroke="url(#torchEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#9e3e3e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-50, -8) scale(0.9)">
+          <path d="M12,2 L19,13 L12,16 L5,13 Z" fill="#ee4c2c"/>
+          <circle cx="12" cy="8" r="3" fill="#fff"/>
+          <text x="32" y="12" class="lbl">PyTorch</text>
         </g>
-        <text x="64" y="40" class="lbl">PyTorch</text>
-        <text x="64" y="56" class="sub-lbl">&lt;deep_learning&gt;</text>
       </g>
     </g>
 
-    <!-- TensorFlow -->
-    <g transform="translate(380, 55)">
-      <g class="f3">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- TensorFlow Logo Path -->
-        <g transform="translate(16, 24)">
-          <polygon points="16,2 29,9.5 29,24.5 16,32 3,24.5 3,9.5" fill="none" stroke="url(#tfGrad)" stroke-width="2"/>
-          <polygon points="16,2 29,9.5 16,17 3,9.5" fill="url(#tfGrad)" opacity="0.75"/>
-          <polygon points="16,17 29,24.5 16,32 3,24.5" fill="url(#tfGrad)" opacity="0.4"/>
-          <line x1="16" y1="17" x2="16" y2="32" stroke="#fff" stroke-width="1.5"/>
+    <!-- TensorFlow Tile -->
+    <g transform="translate(380, 100)" class="tile-g">
+      <polygon class="shadow-group-3" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-3">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-54, -8) scale(0.9)">
+          <polygon points="12,2 20,6 20,14 12,18 4,14 4,6" fill="none" stroke="#ff9f43" stroke-width="2"/>
+          <text x="32" y="12" class="lbl">TensorFlow</text>
         </g>
-        <text x="64" y="40" class="lbl">TensorFlow</text>
-        <text x="64" y="56" class="sub-lbl">&lt;neural_nets&gt;</text>
       </g>
     </g>
 
     <!-- Row 2: OpenCV, GenAI, NLP -->
-    <!-- OpenCV -->
-    <g transform="translate(10, 150)">
-      <g class="f4">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- OpenCV Logo -->
-        <g transform="translate(18, 26)">
-          <circle cx="14" cy="9" r="7" fill="none" stroke="#e17055" stroke-width="3"/>
-          <circle cx="7" cy="21" r="7" fill="none" stroke="#00b894" stroke-width="3"/>
-          <circle cx="21" cy="21" r="7" fill="none" stroke="#0984e3" stroke-width="3"/>
-          <circle cx="14" cy="17" r="1.5" fill="#fff"/>
+    <!-- OpenCV Tile -->
+    <g transform="translate(10, 205)" class="tile-g">
+      <polygon class="shadow-group-4" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-4">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#12251c" stroke="url(#cvEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#0a1410" stroke="url(#cvEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#225c43" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-50, -8) scale(0.9)">
+          <circle cx="10" cy="5" r="4.5" fill="none" stroke="#e17055" stroke-width="2"/>
+          <circle cx="5" cy="12" r="4.5" fill="none" stroke="#00b894" stroke-width="2"/>
+          <circle cx="15" cy="12" r="4.5" fill="none" stroke="#0984e3" stroke-width="2"/>
+          <text x="32" y="12" class="lbl">OpenCV</text>
         </g>
-        <text x="64" y="40" class="lbl">OpenCV</text>
-        <text x="64" y="56" class="sub-lbl">&lt;computer_vision&gt;</text>
       </g>
     </g>
 
-    <!-- GenAI -->
-    <g transform="translate(195, 150)">
-      <g class="f3">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- GenAI custom glow spark -->
-        <g transform="translate(16, 24)">
-          <path d="M16,2 C16,12 20,16 30,16 C20,16 16,20 16,30 C16,20 12,16 2,16 C12,16 16,12 16,2 Z" fill="url(#genAiGrad)"/>
-          <circle cx="25" cy="8" r="2" fill="#fff"/>
-          <circle cx="7" cy="24" r="1" fill="#fff"/>
+    <!-- GenAI Tile -->
+    <g transform="translate(195, 205)" class="tile-g">
+      <polygon class="shadow-group-1" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-1">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#1a2535" stroke="url(#genEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#0d141e" stroke="url(#genEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#304a6e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-50, -8) scale(0.9)">
+          <path d="M12,2 C12,8 14,10 20,10 C14,10 12,12 12,18 C12,12 10,10 4,10 C10,10 12,8 12,2 Z" fill="#00cec9"/>
+          <text x="32" y="12" class="lbl">GenAI &amp; LLMs</text>
         </g>
-        <text x="64" y="40" class="lbl">GenAI &amp; LLMs</text>
-        <text x="64" y="56" class="sub-lbl">&lt;prompt_n_agents&gt;</text>
       </g>
     </g>
 
-    <!-- NLP -->
-    <g transform="translate(380, 150)">
-      <g class="f1">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- NLP Logo representation -->
-        <g transform="translate(16, 24)" fill="none" stroke="#00cec9" stroke-width="2" stroke-linecap="round">
-          <line x1="4" y1="16" x2="4" y2="16"/>
-          <line x1="8" y1="10" x2="8" y2="22"/>
-          <line x1="12" y1="6" x2="12" y2="26"/>
-          <line x1="16" y1="12" x2="16" y2="20"/>
-          <line x1="20" y1="4" x2="20" y2="28"/>
-          <line x1="24" y1="14" x2="24" y2="18"/>
-          <line x1="28" y1="8" x2="28" y2="24"/>
+    <!-- NLP Tile -->
+    <g transform="translate(380, 205)" class="tile-g">
+      <polygon class="shadow-group-2" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-2">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#251a3a" stroke="url(#nlpEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#120e22" stroke="url(#nlpEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#4f387c" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-52, -8) scale(0.9)">
+          <path d="M4,12 L8,4 L12,16 L16,8 L20,12" fill="none" stroke="#a29bfe" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="32" y="12" class="lbl">NLP &amp; Text</text>
         </g>
-        <text x="64" y="40" class="lbl">NLP &amp; Text</text>
-        <text x="64" y="56" class="sub-lbl">&lt;speech_n_seq&gt;</text>
       </g>
     </g>
   </g>
 
-  <!-- Right Column: DE, INFRASTRUCTURE & MLOPS -->
+  <!-- ================= RIGHT COLUMN: CLOUD, MLOPS & DEPLOYMENT ================= -->
   <g transform="translate(600, 20)">
-    <!-- Column Title -->
     <text x="10" y="25" class="cat-title">❯ CLOUD, MLOPS &amp; DEPLOYMENT</text>
-    <line x1="10" y1="35" x2="350" y2="35" stroke="#3e387c" stroke-width="1.5"/>
+    <line x1="10" y1="35" x2="350" y2="35" stroke="#2c2266" stroke-width="1.5"/>
 
     <!-- Row 1: AWS, GCP, SQL -->
-    <!-- AWS -->
-    <g transform="translate(10, 55)">
-      <g class="f2">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- AWS Custom Logo -->
-        <g transform="translate(16, 28)">
-          <path d="M16,4 C8,4 2,10 2,16 C2,22 8,28 16,28" fill="none" stroke="#ff9f43" stroke-width="2.5"/>
-          <path d="M6,24 C12,28 20,28 26,24" fill="none" stroke="#ff9f43" stroke-width="2.5" stroke-linecap="round"/>
-          <polygon points="26,24 24,19 28,21" fill="#ff9f43"/>
+    <!-- AWS Tile -->
+    <g transform="translate(10, 100)" class="tile-g">
+      <polygon class="shadow-group-3" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-3">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-46, -8) scale(0.9)">
+          <path d="M4,15 C8,18 16,18 20,15" fill="none" stroke="#ff9f43" stroke-width="2" stroke-linecap="round"/>
+          <polygon points="20,15 18,11 21,12" fill="#ff9f43"/>
+          <text x="32" y="12" class="lbl">AWS</text>
         </g>
-        <text x="64" y="40" class="lbl">AWS</text>
-        <text x="64" y="56" class="sub-lbl">&lt;solutions_arch&gt;</text>
       </g>
     </g>
 
-    <!-- GCP -->
-    <g transform="translate(195, 55)">
-      <g class="f4">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- GCP logo representation -->
-        <g transform="translate(16, 24)">
-          <path d="M16,4 L28,11 L28,25 L16,32 L4,25 L4,11 Z" fill="none" stroke="url(#cloudGrad)" stroke-width="2"/>
-          <polygon points="16,4 28,11 16,18" fill="#ea4335" opacity="0.8"/>
-          <polygon points="28,11 28,25 16,18" fill="#4285f4" opacity="0.8"/>
-          <polygon points="28,25 16,32 16,18" fill="#34a853" opacity="0.8"/>
-          <polygon points="16,32 4,25 16,18" fill="#fbbd05" opacity="0.8"/>
+    <!-- Google Cloud Tile -->
+    <g transform="translate(195, 100)" class="tile-g">
+      <polygon class="shadow-group-4" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-4">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#1b253a" stroke="url(#genEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#0d1222" stroke="url(#genEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#32496e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-54, -8) scale(0.9)">
+          <polygon points="12,2 20,7 20,15 12,20 4,15 4,7" fill="none" stroke="#74b9ff" stroke-width="1.8"/>
+          <polygon points="12,2 20,7 12,11" fill="#ea4335" opacity="0.85"/>
+          <text x="32" y="12" class="lbl">Google Cloud</text>
         </g>
-        <text x="64" y="40" class="lbl">Google Cloud</text>
-        <text x="64" y="56" class="sub-lbl">&lt;vertex_ai_ops&gt;</text>
       </g>
     </g>
 
-    <!-- SQL -->
-    <g transform="translate(380, 55)">
-      <g class="f1">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- SQL Database cylinders -->
-        <g transform="translate(20, 24)" fill="none" stroke="#a29bfe" stroke-width="2">
-          <ellipse cx="12" cy="8" rx="10" ry="4" fill="#1b1440"/>
-          <path d="M2,8 L2,16 A10,4 0 0,0 22,16 L22,8" fill="#1b1440"/>
-          <path d="M2,16 L2,24 A10,4 0 0,0 22,24 L22,16" fill="#1b1440"/>
+    <!-- SQL Tile -->
+    <g transform="translate(380, 100)" class="tile-g">
+      <polygon class="shadow-group-1" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-1">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#251a3a" stroke="url(#nlpEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#120e22" stroke="url(#nlpEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#4f387c" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-54, -8) scale(0.9)">
+          <ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="#a29bfe" stroke-width="1.5"/>
+          <path d="M4,6 L4,14 A8,3 0 0,0 20,14 L20,6" fill="none" stroke="#a29bfe" stroke-width="1.5"/>
+          <text x="32" y="12" class="lbl">SQL &amp; Query</text>
         </g>
-        <text x="64" y="40" class="lbl">SQL &amp; Query</text>
-        <text x="64" y="56" class="sub-lbl">&lt;relational_db&gt;</text>
       </g>
     </g>
 
     <!-- Row 2: Git, Linux, Jupyter -->
-    <!-- Git -->
-    <g transform="translate(10, 150)">
-      <g class="f3">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- Git Branch Logo -->
-        <g transform="translate(18, 24)">
-          <path d="M16,4 L16,24 M16,14 C20,14 24,18 24,22" fill="none" stroke="#e17055" stroke-width="2.5"/>
-          <circle cx="16" cy="4" r="3.5" fill="#e17055"/>
-          <circle cx="16" cy="24" r="3.5" fill="#e17055"/>
-          <circle cx="24" cy="22" r="3.5" fill="#e17055"/>
+    <!-- Git Tile -->
+    <g transform="translate(10, 205)" class="tile-g">
+      <polygon class="shadow-group-2" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-2">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#381b1b" stroke="url(#torchEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#1c0f0f" stroke="url(#torchEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#9e3e3e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-52, -8) scale(0.9)">
+          <path d="M12,2 L12,18 M12,10 C16,10 18,13 18,16" fill="none" stroke="#ff7675" stroke-width="2"/>
+          <circle cx="12" cy="2" r="2" fill="#ff7675"/>
+          <circle cx="12" cy="18" r="2" fill="#ff7675"/>
+          <circle cx="18" cy="16" r="2" fill="#ff7675"/>
+          <text x="32" y="12" class="lbl">Git &amp; GitHub</text>
         </g>
-        <text x="64" y="40" class="lbl">Git &amp; GitHub</text>
-        <text x="64" y="56" class="sub-lbl">&lt;version_control&gt;</text>
       </g>
     </g>
 
-    <!-- Linux -->
-    <g transform="translate(195, 150)">
-      <g class="f1">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- Linux Terminal Icon -->
-        <g transform="translate(18, 26)" fill="none" stroke="#fff" stroke-width="2.5" stroke-linecap="round">
-          <path d="M4,6 L12,12 L4,18"/>
-          <line x1="14" y1="18" x2="24" y2="18" stroke="#00cec9"/>
+    <!-- Linux Tile -->
+    <g transform="translate(195, 205)" class="tile-g">
+      <polygon class="shadow-group-3" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-3">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#12251c" stroke="url(#cvEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#0a1410" stroke="url(#cvEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#225c43" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-54, -8) scale(0.9)">
+          <path d="M4,4 L10,10 L4,16" fill="none" stroke="#00b894" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="12" y1="16" x2="20" y2="16" stroke="#00b894" stroke-width="2.5" stroke-linecap="round"/>
+          <text x="32" y="12" class="lbl">Linux Systems</text>
         </g>
-        <text x="64" y="40" class="lbl">Linux Systems</text>
-        <text x="64" y="56" class="sub-lbl">&lt;bash_scripting&gt;</text>
       </g>
     </g>
 
-    <!-- Jupyter -->
-    <g transform="translate(380, 150)">
-      <g class="f2">
-        <rect width="170" height="80" rx="12" fill="url(#cardGlow)" stroke="#3e387c" stroke-width="1.2" class="glow-item"/>
-        <!-- Jupyter icon representation -->
-        <g transform="translate(16, 24)">
-          <circle cx="16" cy="16" r="11" fill="none" stroke="#fdcb6e" stroke-width="1.5" opacity="0.7"/>
-          <ellipse cx="16" cy="16" rx="14" ry="4" fill="none" stroke="#e17055" stroke-width="1.5" transform="rotate(30, 16, 16)"/>
-          <circle cx="16" cy="16" r="4.5" fill="#e17055"/>
+    <!-- Jupyter Tile -->
+    <g transform="translate(380, 205)" class="tile-g">
+      <polygon class="shadow-group-4" points="-70,25 0,10 70,25 0,40" fill="#000" filter="url(#shadowBlur)"/>
+      <g class="float-group-4">
+        <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <g transform="translate(-50, -8) scale(0.9)">
+          <circle cx="12" cy="10" r="7" fill="none" stroke="#ff9f43" stroke-width="1.5"/>
+          <circle cx="12" cy="10" r="3" fill="#ff9f43"/>
+          <text x="32" y="12" class="lbl">Jupyter Lab</text>
         </g>
-        <text x="64" y="40" class="lbl">Jupyter Lab</text>
-        <text x="64" y="56" class="sub-lbl">&lt;eda_n_research&gt;</text>
       </g>
     </g>
   </g>

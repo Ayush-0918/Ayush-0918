@@ -1,37 +1,43 @@
 <svg width="1200" height="320" viewBox="0 0 1200 320" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <!-- Background linear gradient -->
+    <!-- Background Space Gradient -->
     <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#02000a"/>
-      <stop offset="50%" stop-color="#0b081e"/>
-      <stop offset="100%" stop-color="#140f34"/>
+      <stop offset="40%" stop-color="#07041a"/>
+      <stop offset="80%" stop-color="#0e082c"/>
+      <stop offset="100%" stop-color="#180e44"/>
     </linearGradient>
     
-    <!-- Text gradient -->
+    <!-- Text Glow Gradient -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#a29bfe"/>
-      <stop offset="35%" stop-color="#74b9ff"/>
-      <stop offset="70%" stop-color="#00cec9"/>
+      <stop offset="30%" stop-color="#00cec9"/>
+      <stop offset="70%" stop-color="#74b9ff"/>
       <stop offset="100%" stop-color="#a29bfe"/>
-      <animate attributeName="x1" values="-100%;100%" dur="8s" repeatCount="indefinite"/>
-      <animate attributeName="x2" values="0%;200%" dur="8s" repeatCount="indefinite"/>
+      <animate attributeName="x1" values="-100%;100%" dur="7s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="0%;200%" dur="7s" repeatCount="indefinite"/>
     </linearGradient>
 
-    <!-- Terminal border gradient -->
-    <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00cec9" stop-opacity="0.8"/>
-      <stop offset="50%" stop-color="#6c5ce7" stop-opacity="0.3"/>
-      <stop offset="100%" stop-color="#fdcb6e" stop-opacity="0.8"/>
+    <!-- 3D Card Edge & Border Gradient -->
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00cec9"/>
+      <stop offset="40%" stop-color="#6c5ce7"/>
+      <stop offset="100%" stop-color="#ff7675"/>
     </linearGradient>
 
-    <!-- Grid pattern -->
+    <linearGradient id="cardSide" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0c072b"/>
+      <stop offset="100%" stop-color="#040212"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#241e54" stroke-width="0.8" opacity="0.4"/>
-      <circle cx="0" cy="0" r="1" fill="#74b9ff" opacity="0.3"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2c2266" stroke-width="0.8" opacity="0.3"/>
+      <circle cx="0" cy="0" r="1.2" fill="#00cec9" opacity="0.25"/>
     </pattern>
 
-    <!-- Glow filters -->
-    <filter id="neonGlow" x="-20%" y="-20%" width="140%" height="140%">
+    <!-- Filters -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
       <feGaussianBlur stdDeviation="8" result="blur" />
       <feMerge>
         <feMergeNode in="blur" />
@@ -45,6 +51,9 @@
         <feMergeNode in="SourceGraphic" />
       </feMerge>
     </filter>
+    <filter id="shadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="15" stdDeviation="10" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&amp;family=Outfit:wght@400;600;800&amp;display=swap');
@@ -52,72 +61,98 @@
       .name-text {
         font-family: 'Outfit', -apple-system, sans-serif;
         font-weight: 800;
-        font-size: 58px;
+        font-size: 62px;
         fill: url(#nameGrad);
         letter-spacing: 2px;
       }
       
       .subtitle-text {
         font-family: 'Outfit', -apple-system, sans-serif;
-        font-weight: 400;
+        font-weight: 600;
         font-size: 19px;
         fill: #d5d1ff;
-        letter-spacing: 3px;
+        letter-spacing: 4px;
+        opacity: 0.9;
       }
       
       .tech-badge {
         font-family: 'Fira Code', monospace;
         font-size: 12px;
         fill: #00cec9;
-        font-weight: 500;
+        font-weight: 700;
       }
 
       .term-text {
         font-family: 'Fira Code', monospace;
-        font-size: 13px;
-        fill: #c8c6f0;
+        font-size: 12px;
+        fill: #e0dbff;
       }
 
-      .term-cmd { fill: #00cec9; font-weight: 500; }
-      .term-param { fill: #a29bfe; }
-      .term-string { fill: #fdcb6e; }
-      .term-output { fill: #81ecec; }
-      .term-comment { fill: #57606f; font-style: italic; }
+      .term-cmd { fill: #f8a5c2; font-weight: 700; }
+      .term-param { fill: #78e08f; }
+      .term-string { fill: #f7d794; }
+      .term-val { fill: #63cdda; }
+      .term-comment { fill: #5f27cd; font-style: italic; }
 
-      /* Animations */
+      /* Keyframes */
+      @keyframes float3D {
+        0%, 100% { transform: translateY(0px) rotateX(15deg) rotateY(-18deg) rotateZ(4deg); }
+        50% { transform: translateY(-12px) rotateX(12deg) rotateY(-14deg) rotateZ(3deg); }
+      }
+
+      @keyframes shadowPulse {
+        0%, 100% { opacity: 0.5; transform: scale(1) translateY(0px); }
+        50% { opacity: 0.3; transform: scale(0.92) translateY(5px); }
+      }
+
+      @keyframes neonPulse {
+        0%, 100% { opacity: 0.4; }
+        50% { opacity: 0.85; }
+      }
+
       @keyframes floatParticle {
-        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.2; }
-        50% { transform: translateY(-15px) translateX(10px); opacity: 0.8; }
+        0%, 100% { transform: translateY(0px) translateX(0px); opacity: 0.3; }
+        50% { transform: translateY(-18px) translateX(12px); opacity: 0.9; }
       }
 
-      @keyframes pulseGlow {
-        0%, 100% { opacity: 0.3; }
-        50% { opacity: 0.7; }
+      @keyframes waveFlow {
+        0% { transform: translateX(0px); }
+        100% { transform: translateX(-400px); }
       }
 
-      @keyframes scanline {
-        0% { transform: translateY(-220px); }
-        100% { transform: translateY(220px); }
+      @keyframes nodeSignal {
+        0%, 100% { opacity: 0.3; transform: scale(1); }
+        50% { opacity: 1; transform: scale(1.2); }
       }
 
-      @keyframes typing {
-        0%, 90%, 100% { opacity: 1; }
-        45%, 55% { opacity: 0; }
+      .terminal-3d-wrapper {
+        transform-style: preserve-3d;
+        transform: rotateX(15deg) rotateY(-18deg) rotateZ(4deg);
+        animation: float3D 6s infinite ease-in-out;
       }
 
-      @keyframes floatCard {
-        0%, 100% { transform: translateY(0px); }
-        50% { transform: translateY(-6px); }
+      .shadow-3d {
+        transform: rotateX(15deg) rotateY(-18deg) rotateZ(4deg) translateZ(-40px);
+        animation: shadowPulse 6s infinite ease-in-out;
       }
 
-      .particle-1 { animation: floatParticle 6s infinite ease-in-out; }
-      .particle-2 { animation: floatParticle 8s infinite ease-in-out 1s; }
-      .particle-3 { animation: floatParticle 7s infinite ease-in-out 2s; }
+      .glow-circuit { animation: neonPulse 4s infinite ease-in-out; }
+      .particle-slow { animation: floatParticle 8s infinite ease-in-out; }
+      .particle-fast { animation: floatParticle 5s infinite ease-in-out 1.5s; }
       
-      .glow-path { animation: pulseGlow 4s infinite ease-in-out; }
-      .terminal-window { animation: floatCard 6s infinite ease-in-out; }
-      .scanline-effect { animation: scanline 8s infinite linear; }
-      .cursor-blink { animation: typing 1s infinite; }
+      .sine-wave {
+        animation: waveFlow 10s infinite linear;
+      }
+
+      .signal-node {
+        animation: nodeSignal 2s infinite ease-in-out;
+        transform-origin: 275px 18px;
+      }
+
+      .cursor {
+        animation: blink 1s infinite;
+      }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
     </style>
   </defs>
 
@@ -125,138 +160,138 @@
   <rect width="1200" height="320" fill="url(#bg)"/>
   <rect width="1200" height="320" fill="url(#grid)"/>
 
-  <!-- Glowing background elements -->
-  <circle cx="150" cy="160" r="180" fill="#6c5ce7" opacity="0.15" filter="url(#neonGlow)"/>
-  <circle cx="1050" cy="160" r="160" fill="#00cec9" opacity="0.1" filter="url(#neonGlow)"/>
-  
-  <!-- Circuit lines / Neural network lines -->
-  <g stroke="#4a4a8a" stroke-width="1.2" opacity="0.45" fill="none" class="glow-path">
-    <path d="M-50,80 L200,80 L250,130 L450,130 L490,90 L600,90" />
-    <path d="M150,340 L280,210 L500,210 L550,260 L800,260" />
-    <path d="M1100,340 L950,190 L880,190 L820,130 L650,130" />
-    <path d="M1250,60 L1000,60 L920,140 L700,140" />
+  <!-- Neural Connection Circuits -->
+  <g stroke="url(#cardBorder)" stroke-width="1.2" fill="none" class="glow-circuit" opacity="0.6" filter="url(#subtleGlow)">
+    <path d="M-20,70 L250,70 L290,110 L540,110 L580,70 L650,70" />
+    <path d="M120,330 L220,230 L500,230 L540,270 L800,270" />
+    <path d="M1120,330 L980,190 L900,190 L850,140 L720,140" />
+    <path d="M1220,50 L1020,50 L950,120 L780,120" />
   </g>
   
-  <!-- Pulse points on circuit lines -->
   <g fill="#00cec9">
-    <circle cx="250" cy="130" r="3" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
-    <circle cx="490" cy="90" r="3" filter="url(#subtleGlow)"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
-    <circle cx="920" cy="140" r="3" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
+    <circle cx="290" cy="110" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
+    <circle cx="580" cy="70" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
+    <circle cx="950" cy="120" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
   </g>
 
   <!-- Floating Particles -->
-  <circle class="particle-1" cx="80" cy="220" r="2" fill="#74b9ff"/>
-  <circle class="particle-2" cx="320" cy="60" r="1.5" fill="#a29bfe"/>
-  <circle class="particle-3" cx="540" cy="280" r="2" fill="#00cec9"/>
-  <circle class="particle-1" cx="1120" cy="80" r="1.5" fill="#fdcb6e"/>
-  <circle class="particle-2" cx="1020" cy="280" r="2" fill="#74b9ff"/>
+  <circle class="particle-slow" cx="120" cy="240" r="2.5" fill="#74b9ff"/>
+  <circle class="particle-fast" cx="350" cy="50" r="2" fill="#a29bfe"/>
+  <circle class="particle-slow" cx="520" cy="280" r="3" fill="#00cec9"/>
+  <circle class="particle-fast" cx="1080" cy="90" r="2" fill="#ff7675"/>
+  <circle class="particle-slow" cx="1000" cy="260" r="2.5" fill="#74b9ff"/>
 
   <!-- Left Content Column -->
   <g transform="translate(80, 0)">
     <!-- Tech chips header -->
-    <g transform="translate(0, 65)">
-      <rect x="0" y="0" width="135" height="24" rx="12" fill="#1e184a" stroke="#4a3e9c" stroke-width="1"/>
-      <circle cx="12" cy="12" r="4" fill="#00cec9" />
-      <text x="24" y="16" class="tech-badge">STUDENT AT IITR</text>
+    <g transform="translate(0, 60)">
+      <rect x="0" y="0" width="140" height="26" rx="13" fill="#150a3a" stroke="#4a3e9c" stroke-width="1.2"/>
+      <circle cx="14" cy="13" r="4.5" fill="#00cec9" filter="url(#subtleGlow)"/>
+      <text x="28" y="17" class="tech-badge">STUDENT AT IITR</text>
     </g>
     
     <!-- Main Name -->
-    <text x="0" y="155" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
+    <text x="0" y="150" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
     
     <!-- Subtitle -->
-    <text x="0" y="205" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
+    <text x="0" y="200" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
 
     <!-- Accent terminal prompt line -->
-    <g transform="translate(0, 245)" font-family="'Fira Code', monospace" font-size="14">
+    <g transform="translate(0, 240)" font-family="'Fira Code', monospace" font-size="14">
       <text fill="#57606f" x="0" y="0">❯</text>
       <text fill="#00cec9" x="18" y="0">npm</text>
-      <text fill="#c8c6f0" x="52" y="0">run</text>
-      <text fill="#fdcb6e" x="84" y="0">build-awesome-things</text>
+      <text fill="#d5d1ff" x="52" y="0">run</text>
+      <text fill="#ff7675" x="84" y="0">build-awesome-things</text>
       <text fill="#a29bfe" x="280" y="0">--production</text>
     </g>
   </g>
 
-  <!-- Right Content Column: Floating IDE Terminal -->
-  <!-- Outer translation group preserves absolute positioning -->
-  <g transform="translate(680, 50)">
-    <!-- Inner group handles the CSS float animation without overriding coordinate translate -->
-    <g class="terminal-window">
-      <!-- Drop Shadow representation -->
-      <rect x="4" y="4" width="440" height="220" rx="12" fill="#02000a" opacity="0.6"/>
-      
-      <!-- Main Window -->
-      <rect width="440" height="220" rx="12" fill="#080614" stroke="url(#termBorder)" stroke-width="1.5" />
-      
-      <!-- Scanline effect layer inside terminal -->
-      <g opacity="0.08">
-        <line class="scanline-effect" x1="1.5" y1="0" x2="438.5" y2="0" stroke="#00cec9" stroke-width="3"/>
-      </g>
+  <!-- Right Content Column: True 3D Terminal -->
+  <g transform="translate(680, 30)">
+    <!-- 3D Shadow -->
+    <g class="shadow-3d">
+      <rect x="10" y="15" width="410" height="210" rx="16" fill="#000000" filter="url(#glow)" opacity="0.6"/>
+    </g>
 
+    <!-- 3D Terminal Container Group -->
+    <g class="terminal-3d-wrapper">
+      <!-- 3D Extrusion Side Wall Left -->
+      <path d="M 0,0 L -8,6 L -8,216 L 0,210 Z" fill="url(#cardSide)" stroke="#180e44" stroke-width="0.5"/>
+      <!-- 3D Extrusion Bottom Wall -->
+      <path d="M 0,210 L -8,216 L 402,216 L 410,210 Z" fill="url(#cardSide)" stroke="#180e44" stroke-width="0.5"/>
+      
+      <!-- Main Window Face -->
+      <rect width="410" height="210" rx="16" fill="#0a0520" fill-opacity="0.9" stroke="url(#cardBorder)" stroke-width="1.8" filter="url(#shadow)"/>
+      <rect width="410" height="210" rx="16" fill="none" stroke="#ffffff" stroke-width="0.5" stroke-opacity="0.2"/>
+
+      <!-- Inner Grid overlay for glass texture -->
+      <path d="M 10 35 L 400 35" stroke="#2c2266" stroke-width="0.8"/>
+      
       <!-- Terminal Header / Title Bar -->
       <g transform="translate(0, 0)">
         <!-- Window Controls -->
         <circle cx="20" cy="18" r="6" fill="#ff7675"/>
-        <circle cx="40" cy="18" r="6" fill="#ffeaa7"/>
-        <circle cx="60" cy="18" r="6" fill="#55efc4"/>
+        <circle cx="38" cy="18" r="6" fill="#ffeaa7"/>
+        <circle cx="56" cy="18" r="6" fill="#55efc4"/>
         
+        <!-- Active System Status -->
+        <circle class="signal-node" cx="275" cy="18" r="4.5" fill="#55efc4" filter="url(#subtleGlow)"/>
+        <text x="286" y="21" font-family="'Fira Code', monospace" font-size="8" fill="#00cec9" font-weight="700">SYS: ACTIVE // MLOPS_ONLINE</text>
+
         <!-- Tabs -->
-        <g transform="translate(100, 0)">
+        <g transform="translate(90, 0)">
           <!-- Active tab -->
-          <path d="M0,30 L10,8 L95,8 L105,30 Z" fill="#140f34" stroke="#4a3e9c" stroke-width="1" stroke-bottom="none"/>
-          <text x="52" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" text-anchor="middle">profile.py</text>
-          
-          <!-- Inactive tab -->
-          <g transform="translate(108, 0)" opacity="0.5">
-            <text x="45" y="21" font-family="'Fira Code', monospace" font-size="11" fill="#8a86c9" text-anchor="middle">stack.json</text>
-          </g>
+          <path d="M0,35 L8,10 L105,10 L113,35 Z" fill="#120835" stroke="#3e387c" stroke-width="0.8"/>
+          <text x="56" y="24" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" font-weight="700" text-anchor="middle">profile.py</text>
         </g>
-        
-        <!-- Divider line -->
-        <line x1="0" y1="30" x2="440" y2="30" stroke="#241e54" stroke-width="1" />
       </g>
       
-      <!-- Code / Text Area -->
-      <g transform="translate(25, 60)" class="term-text">
+      <!-- Code Area -->
+      <g transform="translate(25, 62)" class="term-text">
         <!-- Line 1 -->
         <text x="0" y="0">
-          <tspan class="term-cmd">class</tspan> <tspan fill="#ffeaa7">Developer</tspan>:
+          <tspan class="term-cmd">class</tspan> <tspan fill="#ffffff">Developer</tspan>:
         </text>
         
         <!-- Line 2 -->
-        <text x="20" y="22">
-          <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
+        <text x="18" y="20">
+          <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">__init__</tspan>(self):
         </text>
         
         <!-- Line 3 -->
-        <text x="40" y="44">
+        <text x="36" y="40">
           self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
         </text>
         
         <!-- Line 4 -->
-        <text x="40" y="66">
-          self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI Systems &amp; Data Science"</tspan>
+        <text x="36" y="60">
+          self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI Systems &amp; MLOps"</tspan>
         </text>
         
         <!-- Line 5 -->
-        <text x="40" y="88">
-          self.<tspan fill="#81ecec">mission</tspan> = <tspan class="term-string">"Building code that survives scale"</tspan>
+        <text x="36" y="80">
+          self.<tspan fill="#81ecec">college</tspan> = <tspan class="term-string">"iHUB, IIT Roorkee"</tspan>
         </text>
         
         <!-- Line 6 -->
-        <text x="20" y="118">
-          <tspan class="term-param">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
+        <text x="18" y="105">
+          <tspan class="term-cmd">def</tspan> <tspan fill="#74b9ff">status</tspan>(self):
         </text>
         
         <!-- Line 7 -->
-        <text x="40" y="140">
-          <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always Learning &amp; Shipping 🚀"</tspan>
+        <text x="36" y="125">
+          <tspan class="term-cmd">return</tspan> <tspan class="term-string">"Always learning &amp; scaling 🚀"</tspan>
         </text>
         
-        <!-- Cursor on next line -->
-        <g transform="translate(20, 150)">
-          <rect class="cursor-blink" x="0" y="0" width="8" height="15" fill="#00cec9"/>
-        </g>
+        <!-- Cursor -->
+        <rect class="cursor" x="36" y="136" width="7" height="13" fill="#00cec9" filter="url(#subtleGlow)"/>
       </g>
     </g>
+  </g>
+
+  <!-- Oscilloscope Sinus wave at bottom -->
+  <g opacity="0.25">
+    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#00cec9" stroke-width="2.5" filter="url(#subtleGlow)"/>
+    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#a29bfe" stroke-width="1.2" style="animation-delay: -3s;"/>
   </g>
 </svg>

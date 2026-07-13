@@ -1,8 +1,8 @@
 <div align="center">
 
-<img src="https://raw.githubusercontent.com/Ayush-0918/Ayush-0918/main/assets/hero-banner.svg" width="100%"/>
+<img src="assets/hero-banner.svg" width="100%"/>
 
-<sub>✨ <b>Fully custom-built profile engine</b> • Lives as a static asset in my own repository, optimized for instant load and responsive renders.</sub>
+<sub>✨ **Fully custom-built profile engine** • Optimized for instant load and responsive 3D renders.</sub>
 
 <br/>
 
@@ -12,6 +12,30 @@
 [![HackerRank](https://img.shields.io/badge/HackerRank-2EC866?style=for-the-badge&logo=hackerrank&logoColor=white)](https://www.hackerrank.com/@ayushpandey10851)
 <img src="https://komarev.com/ghpvc/?username=Ayush-0918&amp;style=for-the-badge&amp;color=00cec9&amp;label=PROFILE+VIEWS"/>
 
+</div>
+
+<br/>
+
+<div align="center">
+<table width="100%" style="background-color: #050316; border: 1.5px solid #2c2266; border-radius: 12px; font-family: 'Fira Code', monospace; font-size: 13px;">
+<tr>
+<td style="padding: 18px; border: none; line-height: 1.5;">
+<pre>
+<font color="#55efc4"><b>[ayush@iHUB-IITR ~]$</b></font> neofetch --3d-profile
+<font color="#a29bfe"><b>OS</b></font>: macOS Sequoia 15.0 (AI Platform Developer Environment)
+<font color="#a29bfe"><b>Host</b></font>: iHUB DivyaSampark, IIT Roorkee
+<font color="#a29bfe"><b>Kernel</b></font>: AI &amp; Data Science Program
+<font color="#a29bfe"><b>Shell</b></font>: zsh (customized-3d-console)
+<font color="#a29bfe"><b>Uptime</b></font>: 20 yrs, 9 mos (Runtime: Always Learning)
+<font color="#a29bfe"><b>Packages</b></font>: PyTorch, TensorFlow, OpenCV, FastAPI, Kotlin, Compose
+<font color="#a29bfe"><b>Terminal</b></font>: 3D-Isometric-Terminal-Holo (Assets Active)
+<font color="#a29bfe"><b>CPU</b></font>: Neural-Network-Model-Architect (8 Cores)
+<font color="#a29bfe"><b>Memory</b></font>: Infinite-Curiosity / 100% Allocation
+<font color="#a29bfe"><b>Status</b></font>: <font color="#55efc4"><b>🟢 ACTIVE // MLOPS_ONLINE // SOURCE_OPEN</b></font>
+</pre>
+</td>
+</tr>
+</table>
 </div>
 
 <br/>
@@ -137,12 +161,25 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
   </tr>
   <tr>
     <td width="50%" align="center">
+      <img src="https://streak-stats.demolab.com/?user=Ayush-0918&theme=radical&hide_border=true&v=1.1" width="100%"/>
+    </td>
+    <td width="50%" align="center">
       <img src="https://github-readme-activity-graph.vercel.app/graph?username=Ayush-0918&theme=react-dark&hide_border=true" width="100%"/>
     </td>
   </tr>
 </table>
 </div>
 
+<br/>
+
+### 🧊 3D Contribution Space
+
+<div align="center">
+<img src="profile-3d-contrib/profile-night-rainbow.svg" width="100%"/>
+<sub>💡 3D contribution matrix generated dynamically based on active commits to public and private production codebases.</sub>
+</div>
+
+<img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
 
 ## 🌐 Connect &amp; Collaborate
 
