@@ -95,7 +95,7 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 <img src="https://raw.githubusercontent.com/Ayush-0918/Ayush-0918/main/assets/tech-stack.svg" width="100%"/>
 </div>
 
-<sub>⚡ <b>Console Grid</b> • Hovering and glowing node layout visualizing languages, deep learning runtimes, and MLOps platforms.</sub>
+<sub>⚡ <b>Console Grid</b> • Hovering and glowing node layout visualizing languages, deep learning runtime, and MLOps platforms.</sub>
 
 <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
 
