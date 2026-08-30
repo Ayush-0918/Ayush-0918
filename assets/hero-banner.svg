@@ -207,7 +207,7 @@
     <text x="0" y="132" class="name-text" filter="url(#subtleGlow)">AYUSH PANDEY</text>
     
     <!-- Subtitle -->
-    <text x="0" y="176" class="subtitle-text">AI ENGINEER • DATA SCIENTIST</text>
+    <text x="0" y="176" class="subtitle-text">AI/ML &amp; DATA SCIENCE ENGINEER</text>
 
     <!-- Accent terminal prompt capsule line (WOW factor widget) -->
     <g transform="translate(0, 212)">

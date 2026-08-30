@@ -28,7 +28,7 @@
 
 I focus on bridging the gap between theoretical artificial intelligence and practical, production-ready engineering. From computer-vision diagnostics in the field to agent-native memory infrastructures, my code is written to survive the transition from my local machine to the end-user.
 
-Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roorkee)**, with a proven track record in national hackathons and deploying clean, full-stack architectures.
+Currently specializing in **AI/ML &amp; Data Science** via **iHUB DivyaSampark (IIT Roorkee)**. I am an **AI/ML &amp; Data Science Engineer**, active **Open Source Contributor**, and currently seeking **Internships** to deploy production-ready AI models.
 
 </td>
 </tr>
@@ -58,7 +58,7 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 
 | 🔭 Building | 🌱 Researching | 🎯 Hunting For | 💬 Ask Me About |
 | :--- | :--- | :--- | :--- |
-| **Money Tracker** &amp; **Trustflow AI** | Generative AI, MLOps, Vertex AI | AI &amp; MLOps Internships | Computer Vision pipelines, LLM agent design, neural optimization |
+| **Money Tracker** &amp; **Trustflow AI** | Generative AI, MLOps, Vertex AI | AI/ML &amp; Data Science Internships | Computer Vision, Open Source, LLM agents |
 
 <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
 
@@ -125,6 +125,13 @@ Currently specializing in **AI & Data Science** via **iHUB DivyaSampark (IIT Roo
 </div>
 
 <sub>🏆 <b>Holo Cabinet</b> • Showcase of verified contest placements, industry workshop milestones, and academic honors.</sub>
+
+### 🌟 Key Placement Highlights
+*   🏆 **Build with Agora National Hackathon (Paytm Office)** — Secured **Top 5 Winner** rank among competitive national developer teams.
+*   🥇 **1st Place Winner** — AgriTech track at Code Crafter 3.0 National Hackathon (AI Plant Doctor project).
+*   🥉 **Elite Coders Summer of Code** — Currently ranked **3rd Place** nationally out of all participating contributors.
+*   🏅 **Rank #4 / 150+ Teams** — Overall ranking at Code Crafter 3.0 Hackathon.
+*   🎓 **IIT Roorkee iHUB Scholar** — Specialized program in Artificial Intelligence &amp; Data Science.
 
 <img src="https://capsule-render.vercel.app/api?type=rect&amp;color=0:140f38,100:02000a&amp;height=4&amp;section=header" width="100%"/>
 
