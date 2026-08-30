@@ -10,29 +10,29 @@
 
     <!-- Space Nebulas for WOW Factor -->
     <radialGradient id="nebulaCyan" cx="20%" cy="30%" r="60%">
-      <stop offset="0%" stop-color="#00cec9" stop-opacity="0.16"/>
-      <stop offset="100%" stop-color="#00cec9" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#ec4899" stop-opacity="0.14"/>
+      <stop offset="100%" stop-color="#ec4899" stop-opacity="0"/>
     </radialGradient>
     <radialGradient id="nebulaPurple" cx="75%" cy="70%" r="60%">
-      <stop offset="0%" stop-color="#6c5ce7" stop-opacity="0.18"/>
-      <stop offset="100%" stop-color="#6c5ce7" stop-opacity="0"/>
+      <stop offset="0%" stop-color="#a855f7" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#a855f7" stop-opacity="0"/>
     </radialGradient>
     
     <!-- Text Glow Gradient -->
     <linearGradient id="nameGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a29bfe"/>
-      <stop offset="30%" stop-color="#00cec9"/>
-      <stop offset="70%" stop-color="#74b9ff"/>
-      <stop offset="100%" stop-color="#a29bfe"/>
+      <stop offset="0%" stop-color="#d8b4fe"/>
+      <stop offset="30%" stop-color="#a855f7"/>
+      <stop offset="70%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#d8b4fe"/>
       <animate attributeName="x1" values="-100%;100%" dur="7s" repeatCount="indefinite"/>
       <animate attributeName="x2" values="0%;200%" dur="7s" repeatCount="indefinite"/>
     </linearGradient>
 
     <!-- 3D Card Edge & Border Gradient -->
     <linearGradient id="cardBorder" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00cec9"/>
-      <stop offset="40%" stop-color="#6c5ce7"/>
-      <stop offset="100%" stop-color="#ff7675"/>
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="40%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
 
     <linearGradient id="cardSide" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -43,7 +43,7 @@
     <!-- Grid Pattern -->
     <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
       <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#2c2266" stroke-width="0.8" opacity="0.25"/>
-      <circle cx="0" cy="0" r="1.2" fill="#00cec9" opacity="0.2"/>
+      <circle cx="0" cy="0" r="1.2" fill="#a855f7" opacity="0.2"/>
     </pattern>
 
     <!-- Filters -->
@@ -88,7 +88,7 @@
       .tech-badge {
         font-family: 'Fira Code', monospace;
         font-size: 11px;
-        fill: #00cec9;
+        fill: #c084fc;
         font-weight: 700;
       }
 
@@ -99,11 +99,11 @@
         line-height: 1.5;
       }
 
-      .term-cmd { fill: #f8a5c2; font-weight: 700; }
-      .term-param { fill: #78e08f; }
-      .term-string { fill: #f7d794; }
-      .term-val { fill: #63cdda; }
-      .term-comment { fill: #5f27cd; font-style: italic; }
+      .term-cmd { fill: #f472b6; font-weight: 700; }
+      .term-param { fill: #d8b4fe; }
+      .term-string { fill: #e9d5ff; }
+      .term-val { fill: #c084fc; }
+      .term-comment { fill: #8b5cf6; font-style: italic; }
 
       /* Keyframes */
       @keyframes float3D {
@@ -181,25 +181,25 @@
     <path d="M1220,50 L1020,50 L950,120 L780,120" />
   </g>
   
-  <g fill="#00cec9">
+  <g fill="#a855f7">
     <circle cx="290" cy="110" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.2;1;0.2" dur="3s" repeatCount="indefinite"/></circle>
     <circle cx="580" cy="70" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="1;0.2;1" dur="2.5s" repeatCount="indefinite"/></circle>
     <circle cx="950" cy="120" r="3.5" filter="url(#subtleGlow)"><animate attributeName="opacity" values="0.3;1;0.3" dur="3.5s" repeatCount="indefinite"/></circle>
   </g>
 
   <!-- Floating Particles (Pushed to safe boundaries to prevent overlapping text) -->
-  <circle class="particle-slow" cx="80" cy="50" r="2.5" fill="#74b9ff"/>
+  <circle class="particle-slow" cx="80" cy="50" r="2.5" fill="#c084fc"/>
   <circle class="particle-fast" cx="480" cy="270" r="2" fill="#a29bfe"/>
-  <circle class="particle-slow" cx="620" cy="40" r="3" fill="#00cec9"/>
-  <circle class="particle-fast" cx="1120" cy="260" r="2" fill="#ff7675"/>
-  <circle class="particle-slow" cx="1080" cy="60" r="2.5" fill="#74b9ff"/>
+  <circle class="particle-slow" cx="620" cy="40" r="3" fill="#a855f7"/>
+  <circle class="particle-fast" cx="1120" cy="260" r="2" fill="#ec4899"/>
+  <circle class="particle-slow" cx="1080" cy="60" r="2.5" fill="#c084fc"/>
 
   <!-- Left Content Column -->
   <g transform="translate(80, 0)">
     <!-- Tech chips header -->
     <g transform="translate(0, 50)">
       <rect x="0" y="0" width="136" height="24" rx="12" fill="#150a3a" stroke="#4a3e9c" stroke-width="1.2"/>
-      <circle cx="12" cy="12" r="4.5" fill="#00cec9" filter="url(#subtleGlow)"/>
+      <circle cx="12" cy="12" r="4.5" fill="#a855f7" filter="url(#subtleGlow)"/>
       <text x="24" y="16" class="tech-badge">STUDENT AT IITR</text>
     </g>
     
@@ -215,10 +215,10 @@
       <rect x="-8" y="-18" width="372" height="28" rx="8" fill="#060312" fill-opacity="0.8" stroke="#22184a" stroke-width="1"/>
       <text font-family="'Fira Code', monospace" font-size="12" y="0">
         <tspan fill="#57606f" x="8">❯</tspan>
-        <tspan fill="#00cec9" x="24">npm</tspan>
-        <tspan fill="#d5d1ff" x="56">run</tspan>
-        <tspan fill="#ff7675" x="86">build-awesome-things</tspan>
-        <tspan fill="#a29bfe" x="270">--prod</tspan>
+        <tspan fill="#a855f7" x="24">npm</tspan>
+        <tspan fill="#e9d5ff" x="56">run</tspan>
+        <tspan fill="#ec4899" x="86">build-awesome-things</tspan>
+        <tspan fill="#c084fc" x="270">--prod</tspan>
       </text>
     </g>
   </g>
@@ -252,14 +252,14 @@
         <circle cx="56" cy="18" r="6" fill="#55efc4"/>
         
         <!-- Active System Status -->
-        <circle class="signal-node" cx="275" cy="18" r="4.5" fill="#55efc4" filter="url(#subtleGlow)"/>
-        <text x="286" y="21" font-family="'Fira Code', monospace" font-size="8" fill="#00cec9" font-weight="700">SYS: ACTIVE // MLOPS_ONLINE</text>
+        <circle class="signal-node" cx="275" cy="18" r="4.5" fill="#a855f7" filter="url(#subtleGlow)"/>
+        <text x="286" y="21" font-family="'Fira Code', monospace" font-size="8" fill="#c084fc" font-weight="700">SYS: ACTIVE // MLOPS_ONLINE</text>
 
         <!-- Tabs -->
         <g transform="translate(90, 0)">
           <!-- Active tab -->
           <path d="M0,35 L8,10 L105,10 L113,35 Z" fill="#120835" stroke="#3e387c" stroke-width="0.8"/>
-          <text x="56" y="24" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" font-weight="700" text-anchor="middle">profile.py</text>
+          <text x="56" y="24" font-family="'Fira Code', monospace" font-size="11" fill="#c084fc" font-weight="700" text-anchor="middle">profile.py</text>
         </g>
       </g>
       
@@ -291,17 +291,17 @@
           
           <!-- Line 3 -->
           <text x="28" y="36">
-            self.<tspan fill="#81ecec">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
+            self.<tspan fill="#c084fc">name</tspan> = <tspan class="term-string">"Ayush Pandey"</tspan>
           </text>
           
           <!-- Line 4 -->
           <text x="28" y="54">
-            self.<tspan fill="#81ecec">focus</tspan> = <tspan class="term-string">"AI &amp; MLOps"</tspan>
+            self.<tspan fill="#c084fc">focus</tspan> = <tspan class="term-string">"AI &amp; MLOps"</tspan>
           </text>
           
           <!-- Line 5 -->
           <text x="28" y="72">
-            self.<tspan fill="#81ecec">college</tspan> = <tspan class="term-string">"IIT Roorkee"</tspan>
+            self.<tspan fill="#c084fc">college</tspan> = <tspan class="term-string">"IIT Roorkee"</tspan>
           </text>
           
           <!-- Line 6 (empty spacer) -->
@@ -320,7 +320,7 @@
           </text>
           
           <!-- Blinking Cursor -->
-          <rect class="cursor" x="188" y="115" width="7" height="13" fill="#00cec9" filter="url(#subtleGlow)"/>
+          <rect class="cursor" x="188" y="115" width="7" height="13" fill="#a855f7" filter="url(#subtleGlow)"/>
         </g>
       </g>
     </g>
@@ -328,7 +328,7 @@
 
   <!-- Oscilloscope Sinus wave at bottom -->
   <g opacity="0.25">
-    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#00cec9" stroke-width="2.5" filter="url(#subtleGlow)"/>
-    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#a29bfe" stroke-width="1.2" style="animation-delay: -3s;"/>
+    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#a855f7" stroke-width="2.5" filter="url(#subtleGlow)"/>
+    <path class="sine-wave" d="M 0,315 Q 100,300 200,315 T 400,315 T 600,315 T 800,315 T 1000,315 T 1200,315 T 1400,315 T 1600,315 T 1800,315" fill="none" stroke="#ec4899" stroke-width="1.2" style="animation-delay: -3s;"/>
   </g>
 </svg>

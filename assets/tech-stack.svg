@@ -25,54 +25,54 @@
     </filter>
 
     <!-- Tile Gradients -->
-    <!-- Python -->
+    <!-- Python -> Indigo Violet -->
     <linearGradient id="pyTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3b3b75"/><stop offset="100%" stop-color="#14143a"/>
+      <stop offset="0%" stop-color="#4c1d95"/><stop offset="100%" stop-color="#0c071d"/>
     </linearGradient>
     <linearGradient id="pyEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#387eb8"/><stop offset="100%" stop-color="#ffe052"/>
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#a855f7"/>
     </linearGradient>
-
-    <!-- PyTorch -->
+ 
+    <!-- PyTorch -> Deep Fuchsia -->
     <linearGradient id="torchTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4e2c2c"/><stop offset="100%" stop-color="#1c1111"/>
+      <stop offset="0%" stop-color="#701a75"/><stop offset="100%" stop-color="#140215"/>
     </linearGradient>
     <linearGradient id="torchEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ee4c2c"/><stop offset="100%" stop-color="#ff7675"/>
+      <stop offset="0%" stop-color="#d946ef"/><stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
-
-    <!-- TensorFlow -->
+ 
+    <!-- TensorFlow -> Plum Lavender -->
     <linearGradient id="tfTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#52392b"/><stop offset="100%" stop-color="#1e130d"/>
+      <stop offset="0%" stop-color="#581c87"/><stop offset="100%" stop-color="#0f021c"/>
     </linearGradient>
     <linearGradient id="tfEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#ff9f43"/><stop offset="100%" stop-color="#ee5253"/>
+      <stop offset="0%" stop-color="#a855f7"/><stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
-
-    <!-- OpenCV -->
+ 
+    <!-- OpenCV -> Royal Indigo -->
     <linearGradient id="cvTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#223a2d"/><stop offset="100%" stop-color="#0a1410"/>
+      <stop offset="0%" stop-color="#1e1b4b"/><stop offset="100%" stop-color="#050518"/>
     </linearGradient>
     <linearGradient id="cvEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00b894"/><stop offset="100%" stop-color="#0984e3"/>
+      <stop offset="0%" stop-color="#6366f1"/><stop offset="100%" stop-color="#818cf8"/>
     </linearGradient>
-
-    <!-- GenAI -->
+ 
+    <!-- GenAI -> Electric Pink -->
     <linearGradient id="genTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#2d3d52"/><stop offset="100%" stop-color="#121822"/>
+      <stop offset="0%" stop-color="#831843"/><stop offset="100%" stop-color="#1c020d"/>
     </linearGradient>
     <linearGradient id="genEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#00cec9"/><stop offset="100%" stop-color="#a29bfe"/>
+      <stop offset="0%" stop-color="#ec4899"/><stop offset="100%" stop-color="#f472b6"/>
     </linearGradient>
-
-    <!-- NLP -->
+ 
+    <!-- NLP -> Dark Orchid -->
     <linearGradient id="nlpTop" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#3a2b52"/><stop offset="100%" stop-color="#160e22"/>
+      <stop offset="0%" stop-color="#3b0764"/><stop offset="100%" stop-color="#0c0119"/>
     </linearGradient>
     <linearGradient id="nlpEdge" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#a29bfe"/><stop offset="100%" stop-color="#ff7675"/>
+      <stop offset="0%" stop-color="#8b5cf6"/><stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
-
+ 
     <style>
       @import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@500;700&amp;family=Outfit:wght@600;800&amp;display=swap');
       
@@ -80,10 +80,10 @@
         font-family: 'Fira Code', monospace; 
         font-size: 13px; 
         font-weight: 700;
-        fill: #00cec9; 
+        fill: #c084fc; 
         letter-spacing: 2px;
       }
-
+ 
       .lbl { 
         font-family: 'Outfit', sans-serif; 
         font-size: 14px; 
@@ -94,9 +94,9 @@
       .sub-lbl { 
         font-family: 'Fira Code', monospace; 
         font-size: 9px; 
-        fill: #a29bfe; 
+        fill: #e9d5ff; 
       }
-
+ 
       /* Synchronized Float &amp; Shadow animations with staggered delays */
       @keyframes hoverUp {
         0%, 100% { transform: translateY(0px); }
@@ -110,25 +110,25 @@
         0%, 100% { opacity: 0.35; }
         50% { opacity: 0.85; }
       }
-
+ 
       .float-group-1 { animation: hoverUp 4s infinite ease-in-out; }
       .shadow-group-1 { animation: shadowShrink 4s infinite ease-in-out; }
-
+ 
       .float-group-2 { animation: hoverUp 4.4s infinite ease-in-out 0.5s; }
       .shadow-group-2 { animation: shadowShrink 4.4s infinite ease-in-out 0.5s; }
-
+ 
       .float-group-3 { animation: hoverUp 3.8s infinite ease-in-out 1s; }
       .shadow-group-3 { animation: shadowShrink 3.8s infinite ease-in-out 1s; }
-
+ 
       .float-group-4 { animation: hoverUp 4.2s infinite ease-in-out 1.5s; }
       .shadow-group-4 { animation: shadowShrink 4.2s infinite ease-in-out 1.5s; }
-
+ 
       .back-circuits { animation: pulseGrid 4s infinite ease-in-out; }
-
+ 
       /* Hover glow */
       .tile-g:hover .top-face {
         fill-opacity: 0.95;
-        stroke: #00cec9;
+        stroke: #ec4899;
       }
     </style>
   </defs>
@@ -161,10 +161,10 @@
       <g class="float-group-1">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#242456" stroke="url(#pyEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#141430" stroke="url(#pyEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#pyTop)" stroke="#4e4eb2" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#pyTop)" stroke="#8b5cf6" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-50, -8) scale(0.9)">
-          <circle cx="10" cy="8" r="7" fill="#387eb8"/>
-          <circle cx="18" cy="8" r="7" fill="#ffe052"/>
+          <circle cx="10" cy="8" r="7" fill="#818cf8"/>
+          <circle cx="18" cy="8" r="7" fill="#c084fc"/>
           <text x="32" y="12" class="lbl">Python</text>
         </g>
       </g>
@@ -176,9 +176,9 @@
       <g class="float-group-2">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#381b1b" stroke="url(#torchEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#1c0f0f" stroke="url(#torchEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#9e3e3e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#d946ef" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-50, -8) scale(0.9)">
-          <path d="M12,2 L19,13 L12,16 L5,13 Z" fill="#ee4c2c"/>
+          <path d="M12,2 L19,13 L12,16 L5,13 Z" fill="#ec4899"/>
           <circle cx="12" cy="8" r="3" fill="#fff"/>
           <text x="32" y="12" class="lbl">PyTorch</text>
         </g>
@@ -191,9 +191,9 @@
       <g class="float-group-3">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a855f7" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-54, -8) scale(0.9)">
-          <polygon points="12,2 20,6 20,14 12,18 4,14 4,6" fill="none" stroke="#ff9f43" stroke-width="2"/>
+          <polygon points="12,2 20,6 20,14 12,18 4,14 4,6" fill="none" stroke="#c084fc" stroke-width="2"/>
           <text x="32" y="12" class="lbl">TensorFlow</text>
         </g>
       </g>
@@ -206,11 +206,11 @@
       <g class="float-group-4">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#12251c" stroke="url(#cvEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#0a1410" stroke="url(#cvEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#225c43" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#6366f1" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-50, -8) scale(0.9)">
-          <circle cx="10" cy="5" r="4.5" fill="none" stroke="#e17055" stroke-width="2"/>
-          <circle cx="5" cy="12" r="4.5" fill="none" stroke="#00b894" stroke-width="2"/>
-          <circle cx="15" cy="12" r="4.5" fill="none" stroke="#0984e3" stroke-width="2"/>
+          <circle cx="10" cy="5" r="4.5" fill="none" stroke="#f472b6" stroke-width="2"/>
+          <circle cx="5" cy="12" r="4.5" fill="none" stroke="#a855f7" stroke-width="2"/>
+          <circle cx="15" cy="12" r="4.5" fill="none" stroke="#818cf8" stroke-width="2"/>
           <text x="32" y="12" class="lbl">OpenCV</text>
         </g>
       </g>
@@ -222,9 +222,9 @@
       <g class="float-group-1">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#1a2535" stroke="url(#genEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#0d141e" stroke="url(#genEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#304a6e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#ec4899" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-50, -8) scale(0.9)">
-          <path d="M12,2 C12,8 14,10 20,10 C14,10 12,12 12,18 C12,12 10,10 4,10 C10,10 12,8 12,2 Z" fill="#00cec9"/>
+          <path d="M12,2 C12,8 14,10 20,10 C14,10 12,12 12,18 C12,12 10,10 4,10 C10,10 12,8 12,2 Z" fill="#f472b6"/>
           <text x="32" y="12" class="lbl">GenAI &amp; LLMs</text>
         </g>
       </g>
@@ -236,9 +236,9 @@
       <g class="float-group-2">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#251a3a" stroke="url(#nlpEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#120e22" stroke="url(#nlpEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#4f387c" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#8b5cf6" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-52, -8) scale(0.9)">
-          <path d="M4,12 L8,4 L12,16 L16,8 L20,12" fill="none" stroke="#a29bfe" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M4,12 L8,4 L12,16 L16,8 L20,12" fill="none" stroke="#c084fc" stroke-width="2.5" stroke-linecap="round"/>
           <text x="32" y="12" class="lbl">NLP &amp; Text</text>
         </g>
       </g>
@@ -257,10 +257,10 @@
       <g class="float-group-3">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a855f7" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-46, -8) scale(0.9)">
-          <path d="M4,15 C8,18 16,18 20,15" fill="none" stroke="#ff9f43" stroke-width="2" stroke-linecap="round"/>
-          <polygon points="20,15 18,11 21,12" fill="#ff9f43"/>
+          <path d="M4,15 C8,18 16,18 20,15" fill="none" stroke="#ec4899" stroke-width="2" stroke-linecap="round"/>
+          <polygon points="20,15 18,11 21,12" fill="#ec4899"/>
           <text x="32" y="12" class="lbl">AWS</text>
         </g>
       </g>
@@ -272,10 +272,10 @@
       <g class="float-group-4">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#1b253a" stroke="url(#genEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#0d1222" stroke="url(#genEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#32496e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#genTop)" stroke="#ec4899" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-54, -8) scale(0.9)">
-          <polygon points="12,2 20,7 20,15 12,20 4,15 4,7" fill="none" stroke="#74b9ff" stroke-width="1.8"/>
-          <polygon points="12,2 20,7 12,11" fill="#ea4335" opacity="0.85"/>
+          <polygon points="12,2 20,7 20,15 12,20 4,15 4,7" fill="none" stroke="#c084fc" stroke-width="1.8"/>
+          <polygon points="12,2 20,7 12,11" fill="#a855f7" opacity="0.85"/>
           <text x="32" y="12" class="lbl">Google Cloud</text>
         </g>
       </g>
@@ -287,10 +287,10 @@
       <g class="float-group-1">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#251a3a" stroke="url(#nlpEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#120e22" stroke="url(#nlpEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#4f387c" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#nlpTop)" stroke="#8b5cf6" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-54, -8) scale(0.9)">
-          <ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="#a29bfe" stroke-width="1.5"/>
-          <path d="M4,6 L4,14 A8,3 0 0,0 20,14 L20,6" fill="none" stroke="#a29bfe" stroke-width="1.5"/>
+          <ellipse cx="12" cy="6" rx="8" ry="3" fill="none" stroke="#e9d5ff" stroke-width="1.5"/>
+          <path d="M4,6 L4,14 A8,3 0 0,0 20,14 L20,6" fill="none" stroke="#e9d5ff" stroke-width="1.5"/>
           <text x="32" y="12" class="lbl">SQL &amp; Query</text>
         </g>
       </g>
@@ -303,12 +303,12 @@
       <g class="float-group-2">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#381b1b" stroke="url(#torchEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#1c0f0f" stroke="url(#torchEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#9e3e3e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#torchTop)" stroke="#d946ef" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-52, -8) scale(0.9)">
-          <path d="M12,2 L12,18 M12,10 C16,10 18,13 18,16" fill="none" stroke="#ff7675" stroke-width="2"/>
-          <circle cx="12" cy="2" r="2" fill="#ff7675"/>
-          <circle cx="12" cy="18" r="2" fill="#ff7675"/>
-          <circle cx="18" cy="16" r="2" fill="#ff7675"/>
+          <path d="M12,2 L12,18 M12,10 C16,10 18,13 18,16" fill="none" stroke="#d946ef" stroke-width="2"/>
+          <circle cx="12" cy="2" r="2" fill="#d946ef"/>
+          <circle cx="12" cy="18" r="2" fill="#d946ef"/>
+          <circle cx="18" cy="16" r="2" fill="#d946ef"/>
           <text x="32" y="12" class="lbl">Git &amp; GitHub</text>
         </g>
       </g>
@@ -320,10 +320,10 @@
       <g class="float-group-3">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#12251c" stroke="url(#cvEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#0a1410" stroke="url(#cvEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#225c43" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#cvTop)" stroke="#6366f1" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-54, -8) scale(0.9)">
-          <path d="M4,4 L10,10 L4,16" fill="none" stroke="#00b894" stroke-width="2.5" stroke-linecap="round"/>
-          <line x1="12" y1="16" x2="20" y2="16" stroke="#00b894" stroke-width="2.5" stroke-linecap="round"/>
+          <path d="M4,4 L10,10 L4,16" fill="none" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round"/>
+          <line x1="12" y1="16" x2="20" y2="16" stroke="#818cf8" stroke-width="2.5" stroke-linecap="round"/>
           <text x="32" y="12" class="lbl">Linux Systems</text>
         </g>
       </g>
@@ -335,10 +335,10 @@
       <g class="float-group-4">
         <polygon points="-70,0 -70,10 0,20 0,10" fill="#3a251b" stroke="url(#tfEdge)" stroke-width="0.5"/>
         <polygon points="0,10 0,20 70,10 70,0" fill="#1c120e" stroke="url(#tfEdge)" stroke-width="0.5"/>
-        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a66e4e" stroke-width="1.2" filter="url(#tileGlow)"/>
+        <polygon class="top-face" points="-70,0 0,-15 70,0 0,15" fill="url(#tfTop)" stroke="#a855f7" stroke-width="1.2" filter="url(#tileGlow)"/>
         <g transform="translate(-50, -8) scale(0.9)">
-          <circle cx="12" cy="10" r="7" fill="none" stroke="#ff9f43" stroke-width="1.5"/>
-          <circle cx="12" cy="10" r="3" fill="#ff9f43"/>
+          <circle cx="12" cy="10" r="7" fill="none" stroke="#c084fc" stroke-width="1.5"/>
+          <circle cx="12" cy="10" r="3" fill="#c084fc"/>
           <text x="32" y="12" class="lbl">Jupyter Lab</text>
         </g>
       </g>

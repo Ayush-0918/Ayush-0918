@@ -14,24 +14,28 @@
     </linearGradient>
 
     <!-- Glowing Accent Gradients -->
+    <!-- accMoney -> Purple Indigo -->
     <linearGradient id="accMoney" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00cec9"/>
-      <stop offset="100%" stop-color="#0984e3"/>
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="100%" stop-color="#6366f1"/>
     </linearGradient>
 
+    <!-- accTrust -> Hot Magenta -->
     <linearGradient id="accTrust" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#ff7675"/>
-      <stop offset="100%" stop-color="#ffeaa7"/>
+      <stop offset="0%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#c084fc"/>
     </linearGradient>
 
+    <!-- accPlant -> Plum Pink -->
     <linearGradient id="accPlant" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#55efc4"/>
-      <stop offset="100%" stop-color="#00b894"/>
+      <stop offset="0%" stop-color="#c084fc"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
 
+    <!-- accAuth -> Fuchsia Violet -->
     <linearGradient id="accAuth" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#a29bfe"/>
-      <stop offset="100%" stop-color="#6c5ce7"/>
+      <stop offset="0%" stop-color="#e9d5ff"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
     </linearGradient>
 
     <!-- Grid pattern -->
@@ -142,13 +146,13 @@
     <rect width="555" height="4" rx="2" fill="url(#accMoney)"/>
     
     <!-- Header Icon -->
-    <rect x="25" y="25" width="40" height="40" rx="10" fill="#132338" stroke="#00cec9" stroke-width="1.2" filter="url(#subtleGlow)"/>
+    <rect x="25" y="25" width="40" height="40" rx="10" fill="#0f072d" stroke="#a855f7" stroke-width="1.2" filter="url(#subtleGlow)"/>
     <text x="45" y="52" text-anchor="middle" font-size="20">💰</text>
     
     <text x="78" y="44" class="title">Money Tracker</text>
     <rect x="78" y="52" width="76" height="18" rx="9" fill="url(#accMoney)"/>
     <text x="116" y="65" text-anchor="middle" class="badge-text">FLAGSHIP</text>
-
+ 
     <!-- Description -->
     <text x="25" y="110" class="desc">
       <tspan x="25" dy="0">AI-powered personal finance coach with automated categorization,</tspan>
@@ -156,7 +160,7 @@
       <tspan x="25" dy="22">Built as a robust FastAPI backend with PostgreSQL, driving a</tspan>
       <tspan x="25" dy="22">native Android client written in modern Jetpack Compose.</tspan>
     </text>
-
+ 
     <!-- 3D Holographic Chart Component -->
     <g transform="translate(390, 25)">
       <rect width="140" height="140" rx="12" fill="#060312" stroke="#1d164c" stroke-width="1.2"/>
@@ -171,34 +175,34 @@
       <!-- Floating 3D Bars -->
       <!-- Bar 1 (x=30, y=95) -->
       <g transform="translate(30, 95)" class="float-holo">
-        <polygon points="-8,0 0,-4 8,0 0,4" fill="#00cec9" stroke="#fff" stroke-width="0.3"/>
-        <polygon points="-8,0 -8,25 0,29 0,4" fill="#00b894"/>
-        <polygon points="0,4 0,29 8,25 8,0" fill="#00a884" opacity="0.8"/>
+        <polygon points="-8,0 0,-4 8,0 0,4" fill="#a855f7" stroke="#fff" stroke-width="0.3"/>
+        <polygon points="-8,0 -8,25 0,29 0,4" fill="#8b5cf6"/>
+        <polygon points="0,4 0,29 8,25 8,0" fill="#7c3aed" opacity="0.8"/>
       </g>
       <!-- Bar 2 (x=65, y=75) -->
       <g transform="translate(65, 80)" class="float-holo" style="animation-delay: 0.5s;">
-        <polygon points="-8,0 0,-4 8,0 0,4" fill="#74b9ff" stroke="#fff" stroke-width="0.3"/>
-        <polygon points="-8,0 -8,35 0,39 0,4" fill="#0984e3"/>
-        <polygon points="0,4 0,39 8,35 8,0" fill="#0074d3" opacity="0.8"/>
+        <polygon points="-8,0 0,-4 8,0 0,4" fill="#c084fc" stroke="#fff" stroke-width="0.3"/>
+        <polygon points="-8,0 -8,35 0,39 0,4" fill="#a855f7"/>
+        <polygon points="0,4 0,39 8,35 8,0" fill="#8b5cf6" opacity="0.8"/>
       </g>
       <!-- Bar 3 (x=100, y=60) -->
       <g transform="translate(100, 68)" class="float-holo" style="animation-delay: 1s;">
-        <polygon points="-8,0 0,-4 8,0 0,4" fill="#a29bfe" stroke="#fff" stroke-width="0.3"/>
-        <polygon points="-8,0 -8,45 0,49 0,4" fill="#6c5ce7"/>
-        <polygon points="0,4 0,49 8,45 8,0" fill="#5849c7" opacity="0.8"/>
+        <polygon points="-8,0 0,-4 8,0 0,4" fill="#ec4899" stroke="#fff" stroke-width="0.3"/>
+        <polygon points="-8,0 -8,45 0,49 0,4" fill="#d946ef"/>
+        <polygon points="0,4 0,49 8,45 8,0" fill="#c026d3" opacity="0.8"/>
       </g>
       
       <!-- Glowing active target -->
-      <circle cx="100" cy="68" r="4.5" fill="#00cec9" class="signal" filter="url(#subtleGlow)"/>
+      <circle cx="100" cy="68" r="4.5" fill="#ec4899" class="signal" filter="url(#subtleGlow)"/>
       
       <!-- Animated spent text -->
-      <text x="12" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#00cec9" font-weight="700">
+      <text x="12" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#ec4899" font-weight="700">
         $1,482.50
         <animate attributeName="opacity" values="0.7;1;0.7" dur="2s" repeatCount="indefinite"/>
       </text>
       <text x="128" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#8a86c9" text-anchor="end" font-weight="700">ACTIVE</text>
     </g>
-
+ 
     <!-- Tags -->
     <g transform="translate(25, 220)">
       <rect width="68" height="24" rx="12" fill="#150a3a" stroke="#4a3e9c" stroke-width="1"/>
@@ -211,20 +215,20 @@
       <text x="297" y="16" text-anchor="middle" class="tag-text">Jetpack Compose</text>
     </g>
   </g>
-
+ 
   <!-- ============ CARD 2 : Trustflow AI ============ -->
   <g transform="translate(615, 30)" class="card-item">
     <rect class="frame-bg" width="555" height="280" rx="18" fill="url(#cardBg)" stroke="#22184a" stroke-width="1.8"/>
     <rect width="555" height="4" rx="2" fill="url(#accTrust)"/>
     
     <!-- Header Icon -->
-    <rect x="25" y="25" width="40" height="40" rx="10" fill="#2d151c" stroke="#ff7675" stroke-width="1.2" filter="url(#subtleGlow)"/>
+    <rect x="25" y="25" width="40" height="40" rx="10" fill="#0f072d" stroke="#ec4899" stroke-width="1.2" filter="url(#subtleGlow)"/>
     <text x="45" y="52" text-anchor="middle" font-size="20">🔐</text>
     
     <text x="78" y="44" class="title">Trustflow AI</text>
     <rect x="78" y="52" width="70" height="18" rx="9" fill="url(#accTrust)"/>
     <text x="113" y="65" text-anchor="middle" class="badge-text">NEWEST</text>
-
+ 
     <!-- Description -->
     <text x="25" y="110" class="desc">
       <tspan x="25" dy="0">Explainable AI framework designed to audit and trace data flows.</tspan>
@@ -232,7 +236,7 @@
       <tspan x="25" dy="22">assess model weights, detect adversarial input poisoning, and</tspan>
       <tspan x="25" dy="22">guarantee deterministic compliance under strict workloads.</tspan>
     </text>
-
+ 
     <!-- 3D Layered Node Network Component -->
     <g transform="translate(390, 25)">
       <rect width="140" height="140" rx="12" fill="#060312" stroke="#1d164c" stroke-width="1.2"/>
@@ -243,18 +247,18 @@
         <!-- Plane Outline -->
         <polygon points="-42,0 0,-16 42,0 0,16" fill="none" stroke="#4a226d" stroke-width="1.2" opacity="0.6"/>
         <!-- Nodes -->
-        <circle cx="-20" cy="0" r="3.5" fill="#ff7675" filter="url(#subtleGlow)"/>
-        <circle cx="20" cy="0" r="3.5" fill="#ff7675"/>
+        <circle cx="-20" cy="0" r="3.5" fill="#ec4899" filter="url(#subtleGlow)"/>
+        <circle cx="20" cy="0" r="3.5" fill="#ec4899"/>
       </g>
       
       <!-- Layer 2: Model Plane (elevated) -->
       <g transform="translate(70, 50)" class="float-holo" style="animation-delay: 0.8s;">
-        <polygon points="-42,0 0,-16 42,0 0,16" fill="none" stroke="#00cec9" stroke-width="1.2" opacity="0.7"/>
+        <polygon points="-42,0 0,-16 42,0 0,16" fill="none" stroke="#a855f7" stroke-width="1.2" opacity="0.7"/>
         <!-- Decision Center Node -->
-        <circle cx="0" cy="0" r="5" fill="#ffeaa7" filter="url(#subtleGlow)"/>
-        <circle cx="0" cy="0" r="9" fill="none" stroke="#ffeaa7" stroke-width="1" class="signal"/>
+        <circle cx="0" cy="0" r="5" fill="#c084fc" filter="url(#subtleGlow)"/>
+        <circle cx="0" cy="0" r="9" fill="none" stroke="#c084fc" stroke-width="1" class="signal"/>
       </g>
-
+ 
       <!-- Connecting 3D Paths -->
       <g stroke="#8a86c9" stroke-width="1.2" opacity="0.45" stroke-dasharray="2" fill="none">
         <path id="pathLeft" d="M 50,105 L 70,50"/>
@@ -262,18 +266,18 @@
       </g>
       
       <!-- Animated Data Packets Flowing -->
-      <circle r="3" fill="#ffeaa7">
+      <circle r="3" fill="#c084fc">
         <animateMotion dur="2.5s" repeatCount="indefinite">
           <mpath href="#pathLeft"/>
         </animateMotion>
       </circle>
-      <circle r="3" fill="#00cec9">
+      <circle r="3" fill="#ec4899">
         <animateMotion dur="2s" repeatCount="indefinite" begin="1s">
           <mpath href="#pathRight"/>
         </animateMotion>
       </circle>
       
-      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#ffeaa7" text-anchor="middle" font-weight="700">INTEGRITY: 99.9%</text>
+      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#c084fc" text-anchor="middle" font-weight="700">INTEGRITY: 99.9%</text>
     </g>
 
     <!-- Tags -->
@@ -293,13 +297,13 @@
     <rect width="555" height="4" rx="2" fill="url(#accPlant)"/>
     
     <!-- Header Icon -->
-    <rect x="25" y="25" width="40" height="40" rx="10" fill="#0d2520" stroke="#55efc4" stroke-width="1.2" filter="url(#subtleGlow)"/>
+    <rect x="25" y="25" width="40" height="40" rx="10" fill="#0e0628" stroke="#c084fc" stroke-width="1.2" filter="url(#subtleGlow)"/>
     <text x="45" y="52" text-anchor="middle" font-size="20">🌱</text>
     
     <text x="78" y="44" class="title">AI Plant Doctor</text>
     <rect x="78" y="52" width="145" height="18" rx="9" fill="url(#accPlant)"/>
     <text x="150.5" y="65" text-anchor="middle" class="badge-text">🥇 1ST PLACE - AGRITECH</text>
-
+ 
     <!-- Description -->
     <text x="25" y="110" class="desc">
       <tspan x="25" dy="0">Computer-vision system designed to diagnose plant crop diseases</tspan>
@@ -307,7 +311,7 @@
       <tspan x="25" dy="22">Awarded Best UI/UX and ranked #4 out of 150+ hackathon</tspan>
       <tspan x="25" dy="22">teams at the Code Crafter 3.0 National Hackathon.</tspan>
     </text>
-
+ 
     <!-- 3D Holographic Leaf Scanner Component -->
     <g transform="translate(390, 25)">
       <rect width="140" height="140" rx="12" fill="#060312" stroke="#1d164c" stroke-width="1.2"/>
@@ -317,23 +321,23 @@
       <polygon points="70,110 35,65 105,65" fill="url(#accPlant)" opacity="0.1"/>
       
       <!-- Base Projection Platform -->
-      <polygon points="35,110 70,100 105,110 70,120" fill="#081e18" stroke="#55efc4" stroke-width="1"/>
+      <polygon points="35,110 70,100 105,110 70,120" fill="#081e18" stroke="#ec4899" stroke-width="1"/>
       <polygon points="35,110 35,114 70,124 105,114 105,110 Z" fill="#030d0a"/>
       
       <!-- Floating Leaf Model -->
       <g transform="translate(70, 60)" class="float-holo">
-        <path d="M 0,-18 C 15,-18 18,10 0,22 C -18,10 -15,-18 0,-18 Z" fill="#00b894" fill-opacity="0.35" stroke="#55efc4" stroke-width="1.2" filter="url(#subtleGlow)"/>
-        <line x1="0" y1="-18" x2="0" y2="22" stroke="#55efc4" stroke-width="0.8"/>
+        <path d="M 0,-18 C 15,-18 18,10 0,22 C -18,10 -15,-18 0,-18 Z" fill="#8b5cf6" fill-opacity="0.35" stroke="#c084fc" stroke-width="1.2" filter="url(#subtleGlow)"/>
+        <line x1="0" y1="-18" x2="0" y2="22" stroke="#c084fc" stroke-width="0.8"/>
       </g>
       
       <!-- Animated Laser Scanline -->
       <g transform="translate(70, 60)">
-        <line class="laser-line" x1="-22" y1="-15" x2="22" y2="-15" stroke="#55efc4" stroke-width="1.5" filter="url(#neon)"/>
+        <line class="laser-line" x1="-22" y1="-15" x2="22" y2="-15" stroke="#ec4899" stroke-width="1.5" filter="url(#neon)"/>
       </g>
       
-      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="8" fill="#55efc4" text-anchor="middle" font-weight="700">DIAGNOSIS: HEALTHY 98%</text>
+      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="8" fill="#c084fc" text-anchor="middle" font-weight="700">DIAGNOSIS: HEALTHY 98%</text>
     </g>
-
+ 
     <!-- Tags -->
     <g transform="translate(25, 220)">
       <rect width="65" height="24" rx="12" fill="#150a3a" stroke="#4a3e9c" stroke-width="1"/>
@@ -346,20 +350,20 @@
       <text x="303" y="16" text-anchor="middle" class="tag-text">AI APIs</text>
     </g>
   </g>
-
+ 
   <!-- ============ CARD 4 : Authentix ============ -->
   <g transform="translate(615, 330)" class="card-item">
     <rect class="frame-bg" width="555" height="280" rx="18" fill="url(#cardBg)" stroke="#22184a" stroke-width="1.8"/>
     <rect width="555" height="4" rx="2" fill="url(#accAuth)"/>
     
     <!-- Header Icon -->
-    <rect x="25" y="25" width="40" height="40" rx="10" fill="#1a133a" stroke="#a29bfe" stroke-width="1.2" filter="url(#subtleGlow)"/>
+    <rect x="25" y="25" width="40" height="40" rx="10" fill="#1a133a" stroke="#a855f7" stroke-width="1.2" filter="url(#subtleGlow)"/>
     <text x="45" y="52" text-anchor="middle" font-size="20">🛡️</text>
     
     <text x="78" y="44" class="title">Authentix</text>
     <rect x="78" y="52" width="130" height="18" rx="9" fill="url(#accAuth)"/>
     <text x="143" y="65" text-anchor="middle" class="badge-text">MISINFO ENGINE</text>
-
+ 
     <!-- Description -->
     <text x="25" y="110" class="desc">
       <tspan x="25" dy="0">Deep-learning model designed to inspect internet communication,</tspan>
@@ -367,7 +371,7 @@
       <tspan x="25" dy="22">Provides clinical verification scores, analyzing semantic tone, source</tspan>
       <tspan x="25" dy="22">origin networks, and neural text patterns to restore factual clarity.</tspan>
     </text>
-
+ 
     <!-- 3D Dial Gauge Component -->
     <g transform="translate(390, 25)">
       <rect width="140" height="140" rx="12" fill="#060312" stroke="#1d164c" stroke-width="1.2"/>
@@ -391,9 +395,9 @@
         </g>
       </g>
       
-      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#a29bfe" text-anchor="middle" font-weight="700">RATING: GENUINE</text>
+      <text x="70" y="128" font-family="'Fira Code', monospace" font-size="9" fill="#a855f7" text-anchor="middle" font-weight="700">RATING: GENUINE</text>
     </g>
-
+ 
     <!-- Tags -->
     <g transform="translate(25, 220)">
       <rect width="70" height="24" rx="12" fill="#150a3a" stroke="#4a3e9c" stroke-width="1"/>

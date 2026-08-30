@@ -18,10 +18,10 @@
 
 <table width="100%">
 <tr>
-<td width="30%" align="center" valign="middle">
-<img src="https://github.com/Ayush-0918.png" width="220" style="border-radius: 50%; border: 3px solid #6c5ce7; box-shadow: 0 0 15px rgba(108,92,231,0.4);"/>
+<td width="35%" align="center" valign="middle">
+<img src="assets/profile-card.svg" width="280"/>
 </td>
-<td width="70%" valign="top">
+<td width="65%" valign="top">
 
 ### 🖋️ Executive Summary
 > **I don't build software just to check a box. I design systems that work when real-world scale and deadlines collide.**

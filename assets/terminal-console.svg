@@ -10,7 +10,7 @@
     <linearGradient id="termBorder" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#2c2266"/>
       <stop offset="50%" stop-color="#6c5ce7"/>
-      <stop offset="100%" stop-color="#00cec9"/>
+      <stop offset="100%" stop-color="#ec4899"/>
     </linearGradient>
 
     <style>
@@ -22,15 +22,15 @@
         fill: #e0dbff;
       }
       
-      .prompt { fill: #55efc4; font-weight: bold; }
+      .prompt { fill: #c084fc; font-weight: bold; }
       .lbl { fill: #a29bfe; font-weight: bold; }
       .val { fill: #ffffff; }
-      .status-active { fill: #55efc4; font-weight: bold; }
+      .status-active { fill: #ec4899; font-weight: bold; }
 
       /* Blinking Cursor */
       .cursor {
         animation: blink 1s infinite;
-        fill: #55efc4;
+        fill: #a855f7;
       }
       @keyframes blink {
         0%, 100% { opacity: 1; }
@@ -69,7 +69,7 @@
   <circle cx="52" cy="16" r="5" fill="#55efc4"/>
 
   <!-- Terminal Title -->
-  <text x="400" y="20" font-family="'Fira Code', monospace" font-size="11" fill="#00cec9" font-weight="bold" text-anchor="middle" letter-spacing="1">ayush@iHUB-IITR: ~</text>
+  <text x="400" y="20" font-family="'Fira Code', monospace" font-size="11" fill="#c084fc" font-weight="bold" text-anchor="middle" letter-spacing="1">ayush@iHUB-IITR: ~</text>
 
   <!-- Terminal Output -->
   <g transform="translate(25, 60)" class="term-txt">
@@ -125,7 +125,7 @@
 
     <!-- Line 11: Status -->
     <text x="0" y="200" class="l11">
-      <tspan class="lbl">Status</tspan>: <tspan class="status-active">🟢 ACTIVE // MLOPS_ONLINE // SOURCE_OPEN</tspan>
+      <tspan class="lbl">Status</tspan>: <tspan class="status-active">🟣 ACTIVE // MLOPS_ONLINE // SOURCE_OPEN</tspan>
     </text>
 
     <!-- Blinking Cursor at the end -->
