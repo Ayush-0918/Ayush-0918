@@ -155,10 +155,10 @@
  
     <!-- Description -->
     <text x="25" y="110" class="desc">
-      <tspan x="25" dy="0">AI personal finance coach with automated categorization,</tspan>
-      <tspan x="25" dy="22">subscription analytics, and dynamic budget planning.</tspan>
-      <tspan x="25" dy="22">FastAPI backend with PostgreSQL, driving a native</tspan>
-      <tspan x="25" dy="22">Android client built in modern Jetpack Compose.</tspan>
+      <tspan x="25" dy="0">AI personal finance coach with automated</tspan>
+      <tspan x="25" dy="22">categorization and subscription engine.</tspan>
+      <tspan x="25" dy="22">FastAPI &amp; PostgreSQL backend, driving a</tspan>
+      <tspan x="25" dy="22">Jetpack Compose native Android client.</tspan>
     </text>
  
     <!-- 3D Holographic Chart Component -->
@@ -231,10 +231,10 @@
  
     <!-- Description -->
     <text x="25" y="110" class="desc">
-      <tspan x="25" dy="0">Explainable AI framework designed to audit and trace data flows.</tspan>
-      <tspan x="25" dy="22">Empowers systems to monitor neural pipeline reliability,</tspan>
-      <tspan x="25" dy="22">detect adversarial input poisoning, and guarantee</tspan>
-      <tspan x="25" dy="22">deterministic compliance under strict workloads.</tspan>
+      <tspan x="25" dy="0">Explainable AI framework designed to</tspan>
+      <tspan x="25" dy="22">audit and trace complex neural data flows.</tspan>
+      <tspan x="25" dy="22">Detects adversarial input poisoning and</tspan>
+      <tspan x="25" dy="22">guarantees compliance under strict loads.</tspan>
     </text>
  
     <!-- 3D Layered Node Network Component -->
@@ -306,9 +306,9 @@
  
     <!-- Description -->
     <text x="25" y="110" class="desc">
-      <tspan x="25" dy="0">Computer-vision system designed to diagnose plant crop diseases</tspan>
-      <tspan x="25" dy="22">instantly from a photo and generate therapeutic remedies.</tspan>
-      <tspan x="25" dy="22">Won Best UI/UX and ranked #4 out of 150+ teams at the</tspan>
+      <tspan x="25" dy="0">Computer-vision system designed to</tspan>
+      <tspan x="25" dy="22">diagnose plant crop diseases from a photo.</tspan>
+      <tspan x="25" dy="22">Won Best UI/UX &amp; ranked #4 / 150+ at</tspan>
       <tspan x="25" dy="22">Code Crafter 3.0 National Hackathon.</tspan>
     </text>
  
@@ -366,10 +366,10 @@
  
     <!-- Description -->
     <text x="25" y="110" class="desc">
-      <tspan x="25" dy="0">Deep-learning model designed to inspect internet communication,</tspan>
-      <tspan x="25" dy="22">analyzing articles and social feeds to flag deepfakes.</tspan>
-      <tspan x="25" dy="22">Provides verification scores by checking semantic tone,</tspan>
-      <tspan x="25" dy="22">source origin networks, and neural text patterns.</tspan>
+      <tspan x="25" dy="0">Deep-learning model built to inspect</tspan>
+      <tspan x="25" dy="22">media feeds to detect deepfakes &amp; spam.</tspan>
+      <tspan x="25" dy="22">Provides authenticity scores by analyzing</tspan>
+      <tspan x="25" dy="22">semantic tone &amp; neural text patterns.</tspan>
     </text>
  
     <!-- 3D Dial Gauge Component -->
