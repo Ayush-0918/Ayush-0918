@@ -281,7 +281,7 @@
         <g transform="translate(12, 0)">
           <!-- Line 1 -->
           <text x="0" y="0">
-            <tspan class="term-cmd">class</tspan> <tspan fill="#ffffff">Developer</tspan>:
+            <tspan class="term-cmd">class</tspan> <tspan fill="#ffffff">AIMLEngineer</tspan>:
           </text>
           
           <!-- Line 2 -->
@@ -296,7 +296,7 @@
           
           <!-- Line 4 -->
           <text x="28" y="54">
-            self.<tspan fill="#c084fc">focus</tspan> = <tspan class="term-string">"AI &amp; MLOps"</tspan>
+            self.<tspan fill="#c084fc">focus</tspan> = <tspan class="term-string">"AI/ML &amp; Data Science"</tspan>
           </text>
           
           <!-- Line 5 -->
