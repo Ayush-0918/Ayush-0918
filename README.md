@@ -2,8 +2,6 @@
 
 <img src="assets/hero-banner.svg" width="100%"/>
 
-<sub>✨ **Fully custom-built profile engine** • Optimized for instant load and responsive 3D renders.</sub>
-
 <br/>
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/ayush-pandey-8815142b1)
